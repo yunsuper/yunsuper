@@ -1,4 +1,4 @@
-# 🚀 Hello, World! I'm yunsuper!
+# 👋 Hello, World! I'm yunsuper!
 
 ---
 
@@ -93,7 +93,7 @@
 >- **Dev-Connect**: 개발자들을 위한 전용 공유 오피스 커뮤니티를 만들고 있습니다. (Coming Soon!)
 >- 사이드 프로젝트 기획 및 아키텍처 설계 중
 
-## ✅ Deployed & Live Projects
+## 🚀 Deployed & Live Projects
 
 ### [🔮 AI 타로 마스터 (Tarot-Mauve)](https://tarot-mauve.vercel.app/)
 > **"기획부터 배포까지, 1인 풀스택 개발로 완성한 AI 타로 서비스"**
