@@ -140,8 +140,8 @@
 
 ## 📊 My GitHub Stats
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=yunsuper&show_icons=true&theme=blood" alt="GitHub Stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yunsuper&layout=compact&theme=blood" alt="Top Languages" />
+<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=yunsuper&show_icons=true&theme=blood" alt="GitHub Stats" />
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=yunsuper&layout=compact&theme=blood" alt="Top Languages" />
 </p>
 
 ## 📫 Contact Me
