@@ -111,7 +111,7 @@
 ### [🌐 Metabus My Room](https://github.com/yunsuper/Metabus-My-Room)
 > **"Vanilla JS로 구현한 실시간 멀티플레이 메타버스"**
 - **Tech**: JavaScript (Vanilla), Socket.io, Node.js
-- **Status**: **`Completed`** (로컬 구동)
+- **Status**: **`Completed`** (로컬 구동 완료)
 - **Key Point**: 라이브러리 없이 순수 자바스크립트로 **실시간 말풍선 채팅 및 점프 물리 로직**을 구현하며 탄탄한 기본기를 증명한 프로젝트입니다.
 
 ### [📦 Korean Faker User Generator](https://github.com/yunsuper/Korean-Faker-User-Generator)
@@ -122,18 +122,21 @@
 ### [♟️ Jjanggi Board Game](https://github.com/yunsuper/Jjanggi-Board-Game)
 > **"Vite와 Phaser를 활용한 온라인 장기 게임"**
 - **Tech**: JavaScript, **Vite**, **Phaser**, Socket.io
+- **Status**: **`Completed`** (로컬 구동 완료)
 - **Collaboration**: 팀원과 협업하여 게임 엔진 기반의 복잡한 보드게임 로직을 구현했습니다.
 
-### [📍 Travel Planner (v1.1.0)](https://github.com/yunsuper/travel-planner)
-> **"Kakao API를 활용한 나의 첫 웹 서비스 프로젝트"**
-- **Tech**: HTML/CSS, JavaScript, **Kakao Open API**
-- **Growth**: 오픈 API 연동을 통해 지도와 장소 정보를 다루는 법을 익힌 첫 소중한 도전입니다.
+---
+
+## 📁 More Projects Showcase
+| Project | Tech Stack | Key Point | Link |
+| :--- | :--- | :--- | :--- |
+| **▶️ AutoPlay Utility** | `JavaScript` | 동영상 연속 재생 북마크릿 유틸리티 | [🔗](https://github.com/yunsuper/AutoPlay) |
+| **📍 Travel Planner** | `JS` `Kakao API` | 첫 오픈 API 연동 및 웹 서비스 도전 | [🔗](https://github.com/yunsuper/travel-planner) |
 
 ---
 
 ## 🤝 Open Source Contribution
 ### [BhupinderSehjal/OpenLife](https://github.com/BhupinderSehjal/OpenLife)
-- 전 세계 개발자들과 함께 협업하며 프로젝트의 성장에 기여하고 있습니다.
 - 오픈소스 생태계에서의 코드 리뷰 및 기여를 통해 더 나은 코드를 작성하는 법을 고민합니다.
 
 ---
