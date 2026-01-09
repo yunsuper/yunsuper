@@ -25,9 +25,11 @@
   <img src="https://img.shields.io/badge/BAE-DAA520?style=for-the-badge&logo=unpacker&logoColor=white">
 </p>
 
-- **Activity**: 아카라이브 및 네이버 카페에서 다수의 게임 시스템 모드 배포 및 운영
-- **Skyrim & Fallout 4 (Creation Engine)**: 베데스다 전문 모딩 툴셋을 활용한 대규모 시스템 구축, 설계, 수정 및 배포
-- **Cyberpunk 2077 (REDengine)**: 기존 모드 분석 및 트러블슈팅을 통한 안정화
+- **Activity**: 국내 게임 모딩 커뮤니티 및 카페에서 다수의 게임 시스템 모드 배포 및 운영
+- **Skyrim & Fallout 4 (Creation Engine)**:
+  - 베데스다 전문 툴셋을 활용한 시스템 구축, 수정, 배포 및 **나만의 통합 환경(Custom Build) 설계**
+  - **사용자 대상 기술 지원**: 실시간 소통을 통해 모드 충돌 및 에러 해결 가이드 제공 (트러블슈팅)
+- **Cyberpunk 2077 (REDengine)**: 기존 모드 로직 분석 및 런타임 에러(외형 출력 버그 등) 해결을 통한 환경 안정화
 
 ---
 
