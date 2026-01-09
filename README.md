@@ -52,8 +52,9 @@
 <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white">
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
 <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
-<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white">
+<img src="https://img.shields.io/badge/Styled--Components-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white">
 <br>
+<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white">
 <img src="https://img.shields.io/badge/Phaser-820AD1?style=for-the-badge&logo=phaser&logoColor=white">
 <img src="https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white">
 </p>
@@ -65,13 +66,22 @@
 <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white">
 </p>
 
-### 🚀 DevOps & Deploy
+### 🚀 DevOps & Infrastructure
 <p>
 <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
+<img src="https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white">
+<img src="https://img.shields.io/badge/Kubernetes%20(kubectl)-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white">
 <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black">
+<br>
 <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white">
 <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">
 <img src="https://img.shields.io/badge/Railway-131415?style=for-the-badge&logo=railway&logoColor=white">
+</p>
+
+### 🧪 Testing & Automation
+<p>
+<img src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white">
+<img src="https://img.shields.io/badge/Supertest-000000?style=for-the-badge&logo=testinglibrary&logoColor=white">
 </p>
 
 ### 🤖 AI & LLM Engine & Auth
@@ -121,7 +131,7 @@
 > **"테스트 데이터 생성을 위한 Desktop 앱 (.dmg 제공)"**
 - **Tech**: **Electron**, JavaScript, Faker.js
 - Status: Completed (macOS 전용 설치 파일 제공)
-- **Key Point**: 사용자가 별도 환경 설정 없이 즉시 사용할 수 있도록 **설치 파일(.exe)로 패키징**하여 배포한 경험입니다. (Electron 기반 데스크톱 앱 개발 역량)
+- **Key Point**: 사용자가 별도 환경 설정 없이 즉시 사용할 수 있도록 **설치 파일(.dmg)로 패키징**하여 배포했습니다. (Electron 기반 데스크톱 앱 개발)
 
 ### [♟️ Jjanggi Board Game](https://github.com/yunsuper/Jjanggi-Board-Game)
 > **"Vite와 Phaser를 활용한 온라인 장기 게임"**
