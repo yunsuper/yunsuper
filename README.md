@@ -115,7 +115,7 @@
 - **Key Point**: 라이브러리 없이 순수 자바스크립트로 **실시간 말풍선 채팅 및 점프 물리 로직**을 구현하며 탄탄한 기본기를 증명한 프로젝트입니다.
 
 ### [📦 Korean Faker User Generator](https://github.com/yunsuper/Korean-Faker-User-Generator)
-> **"테스트 데이터 생성을 위한 Desktop 앱 (Setup.exe 제공)"**
+> **"테스트 데이터 생성을 위한 Desktop 앱 (.dmg 제공)"**
 - **Tech**: **Electron**, JavaScript, Faker.js
 - Status: Completed (macOS 전용 설치 파일 제공)
 - **Key Point**: 사용자가 별도 환경 설정 없이 즉시 사용할 수 있도록 **설치 파일(.exe)로 패키징**하여 배포한 경험입니다. (Electron 기반 데스크톱 앱 개발 역량)
