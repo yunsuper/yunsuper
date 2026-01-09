@@ -117,6 +117,7 @@
 ### [📦 Korean Faker User Generator](https://github.com/yunsuper/Korean-Faker-User-Generator)
 > **"테스트 데이터 생성을 위한 Desktop 앱 (Setup.exe 제공)"**
 - **Tech**: **Electron**, JavaScript, Faker.js
+- Status: Completed (macOS 전용 설치 파일 제공)
 - **Key Point**: 사용자가 별도 환경 설정 없이 즉시 사용할 수 있도록 **설치 파일(.exe)로 패키징**하여 배포한 경험입니다. (Electron 기반 데스크톱 앱 개발 역량)
 
 ### [♟️ Jjanggi Board Game](https://github.com/yunsuper/Jjanggi-Board-Game)
