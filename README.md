@@ -110,6 +110,16 @@
 
 ## 🚀 Deployed & Live Projects
 
+### [💻 Dev-Connect: 실시간 공유 오피스](https://dev-connect-gules.vercel.app/)
+> **"개발자를 위한 힙한 감성의 실시간 몰입 및 소통 공간"**
+- **Status**: **`Production Ready`** (배포 완료 및 실서비스 중)
+- **Tech**: Next.js, Supabase (Realtime), Framer Motion, Tailwind CSS
+- **Key Point**: 
+  - **Supabase Realtime**을 활용한 실시간 채팅 및 접속 유저 상태 동기화 구현
+  - **뽀모도로 타이머**와 상태 연동을 통한 몰입 환경 제공
+  - 깃허브 OAuth 연동 및 이미지 URL 공유 등 풍부한 커뮤니티 기능
+- **Link**: [https://dev-connect-gules.vercel.app/](https://dev-connect-gules.vercel.app/)
+
 ### [🔮 AI 타로 마스터 (Tarot-Mauve)](https://tarot-mauve.vercel.app/)
 > **"기획부터 배포까지, 1인 풀스택 개발로 완성한 AI 타로 서비스"**
 - **Status**: **`Production Ready`** (배포 완료 및 실서비스 중)
