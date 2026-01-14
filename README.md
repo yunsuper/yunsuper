@@ -105,8 +105,8 @@
 ---
 
 ## 🔭 Currently Working On
->- **Dev-Connect**: 개발자들을 위한 전용 공유 오피스 커뮤니티를 만들고 있습니다. (Coming Soon!)
->- 사이드 프로젝트 기획 및 아키텍처 설계 중
+>- **Dev-Connect**: 실시간 유저 피드백 기반 기능 고도화 중
+>- 새로운 사이드 프로젝트 아이데이션 및 기술 스택 검토 중
 
 ## 🚀 Deployed & Live Projects
 
