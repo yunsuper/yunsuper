@@ -111,7 +111,7 @@
 ## 🚀 Deployed & Live Projects
 
 ### [💻 Dev-Connect: 실시간 공유 오피스](https://dev-connect-gules.vercel.app/)
-> **"개발자를 위한 힙한 감성의 실시간 몰입 및 소통 공간 (1인 풀스택)"**
+> **"개발자를 위한 힙한 감성의 실시간 몰입 및 소통 공간"**
 - **Status**: **`Production Ready`** (배포 완료 및 실서비스 중)
 - **Tech**: Next.js, Supabase (Realtime), Framer Motion, Tailwind CSS
 - **Key Point**: 
@@ -121,7 +121,7 @@
 - **Link**: [https://dev-connect-gules.vercel.app/](https://dev-connect-gules.vercel.app/)
 
 ### [🔮 AI 타로 마스터 (Tarot-Mauve)](https://tarot-mauve.vercel.app/)
-> **"기획부터 배포까지, 1인 풀스택 개발로 완성한 AI 타로 서비스"**
+> **"기획부터 배포까지, 풀스택 개발로 완성한 AI 타로 서비스"**
 - **Status**: **`Production Ready`** (배포 완료 및 실서비스 중)
 - **Tech**: React, Node.js, OpenAI API, Vercel
 - **Key Point**: 인프라 구축 및 API 연동을 포함한 전체 라이프사이클을 경험한 프로젝트입니다.
