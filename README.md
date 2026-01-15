@@ -111,7 +111,7 @@
 ## 🚀 Deployed & Live Projects
 
 ### [💻 Dev-Connect: 실시간 공유 오피스](https://dev-connect-gules.vercel.app/)
-> **"개발자를 위한 힙한 감성의 실시간 몰입 및 소통 공간"**
+> **"개발자를 위한 힙한 감성의 실시간 몰입 및 소통 공간 (1인 풀스택)"**
 - **Status**: **`Production Ready`** (배포 완료 및 실서비스 중)
 - **Tech**: Next.js, Supabase (Realtime), Framer Motion, Tailwind CSS
 - **Key Point**: 
