@@ -120,7 +120,7 @@
   - 깃허브 OAuth 연동 및 이미지 URL 공유 등 풍부한 커뮤니티 기능
 - **Link**: [https://dev-connect-gules.vercel.app/](https://dev-connect-gules.vercel.app/)
 
-### [🔮 AI 타로 마스터 (Tarot-Mauve)](https://tarot-mauve.vercel.app/)
+### [🔮 AI 타로 마스터 (Tarot-Master)](https://tarot-mauve.vercel.app/)
 > **"기획부터 배포까지, 풀스택 개발로 완성한 AI 타로 서비스"**
 - **Status**: **`Production Ready`** (배포 완료 및 실서비스 중)
 - **Tech**: React, Node.js, OpenAI API, Vercel
