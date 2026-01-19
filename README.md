@@ -158,6 +158,8 @@
 | :--- | :--- | :--- | :--- |
 | **▶️ AutoPlay Utility** | `JavaScript` | 동영상 연속 재생 북마크릿 유틸리티 | [🔗](https://github.com/yunsuper/AutoPlay) |
 | **📍 Travel Planner** | `JS` `Kakao API` | 첫 오픈 API 연동 및 웹 서비스 도전 | [🔗](https://github.com/yunsuper/travel-planner) |
+| **🍒 Cherry Notepad Pro** | `Electron` `JS` | Ad-hoc 서명이 적용된 데스크톱 메모 앱 | [🔗](https://github.com/yunsuper/Laser-Notepad-JS) |
+
 
 ---
 
