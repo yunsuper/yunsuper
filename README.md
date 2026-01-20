@@ -127,7 +127,7 @@
 - **Key Point**: 인프라 구축 및 API 연동을 포함한 전체 라이프사이클을 경험한 프로젝트입니다.
 - **Link**: [https://tarot-mauve.vercel.app/](https://tarot-mauve.vercel.app/)
 
-### [🎰 WHO'S NEXT? (Lucky Lotto)](https://whos-next-alpha.vercel.app/)
+### [🎰 WHO'S NEXT? (제비뽑기)](https://whos-next-alpha.vercel.app/)
 > **"물리 엔진과 감각적인 사운드로 구현한 프리미엄 제비뽑기 서비스"**
 - **Status**: **`Production Ready`** (배포 완료 및 실서비스 중)
 - **Tech**: Next.js 15, Matter.js, Web Audio API, Framer Motion, Zustand
