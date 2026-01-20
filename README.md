@@ -127,6 +127,15 @@
 - **Key Point**: 인프라 구축 및 API 연동을 포함한 전체 라이프사이클을 경험한 프로젝트입니다.
 - **Link**: [https://tarot-mauve.vercel.app/](https://tarot-mauve.vercel.app/)
 
+### [🎰 WHO'S NEXT? (Lucky Lotto)](https://whos-next-alpha.vercel.app/)
+> **"물리 엔진과 감각적인 사운드로 구현한 프리미엄 제비뽑기 서비스"**
+- **Status**: **`Production Ready`** (배포 완료 및 실서비스 중)
+- **Tech**: Next.js 15, Matter.js, Web Audio API, Framer Motion, Zustand
+- **Key Point**: 
+  - **Matter.js(2D 물리 엔진)**를 활용하여 실제 공이 섞이는 듯한 역동적인 인터랙션 구현
+  - **Zustand & LocalStorage** 연동을 통한 당첨 히스토리 유지 및 하이드레이션 이슈 해결
+- **Link**: [https://whos-next-alpha.vercel.app/](https://whos-next-alpha.vercel.app/)
+
 ### [🤖 Ollama Local Code Reviewer](https://github.com/yunsuper/Ollama-Local-Code-Reviewer)
 > **"로컬 LLM을 활용한 개인화 코드 리뷰 도구"**
 - **Tech**: Ollama, JavaScript, LLM Prompt Engineering
@@ -138,12 +147,6 @@
 - **Tech**: JavaScript (Vanilla), Socket.io, Node.js
 - **Status**: **`Completed`** (로컬 구동 완료)
 - **Key Point**: 라이브러리 없이 순수 자바스크립트로 **실시간 말풍선 채팅 및 점프 물리 로직**을 구현하며 탄탄한 기본기를 증명한 프로젝트입니다.
-
-### [📦 Korean Faker User Generator](https://github.com/yunsuper/Korean-Faker-User-Generator)
-> **"테스트 데이터 생성을 위한 Desktop 앱 (.dmg 제공)"**
-- **Tech**: **Electron**, JavaScript, Faker.js
-- Status: Completed (macOS 전용 설치 파일 제공)
-- **Key Point**: 사용자가 별도 환경 설정 없이 즉시 사용할 수 있도록 **설치 파일(.dmg)로 패키징**하여 배포했습니다. (Electron 기반 데스크톱 앱 개발)
 
 ### [♟️ Jjanggi Board Game](https://github.com/yunsuper/Jjanggi-Board-Game)
 > **"Vite와 Phaser를 활용한 온라인 장기 게임"**
@@ -159,6 +162,7 @@
 | **▶️ AutoPlay Utility** | `JavaScript` | 동영상 연속 재생 북마크릿 유틸리티 | [🔗](https://github.com/yunsuper/AutoPlay) |
 | **📍 Travel Planner** | `JS` `Kakao API` | 첫 오픈 API 연동 및 웹 서비스 도전 | [🔗](https://github.com/yunsuper/travel-planner) |
 | **🍒 Cherry Notepad Pro** | `Electron` `JS` | Ad-hoc 서명이 적용된 데스크톱 메모 앱 | [🔗](https://github.com/yunsuper/Laser-Notepad-JS) |
+| **📦 Korean Faker** | `Electron` `JS` | 테스트 데이터 생성용 데스크톱 앱 (.dmg) | [🔗](https://github.com/yunsuper/Korean-Faker-User-Generator) |
 
 
 ---
