@@ -111,8 +111,7 @@
 ---
 
 ## 🔭 Currently Working On
->- **Dev-Connect**: 실시간 유저 피드백 기반 기능 고도화 중
->- 새로운 사이드 프로젝트 아이데이션 및 기술 스택 검토 중
+>- 다음 팀 프로젝트 아이디어 구상 중...
 
 ## 🚀 Deployed & Live Projects
 
