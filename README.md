@@ -15,54 +15,76 @@
 
 ### 🛠️ Modding Toolset
 <p>
-  <img src="https://img.shields.io/badge/NifSkope-808080?style=for-the-badge&logo=icloud&logoColor=white">
-  <img src="https://img.shields.io/badge/SSEEdit-4682B4?style=for-the-badge&logo=editor&logoColor=white">
-  <img src="https://img.shields.io/badge/Creation%20Kit-202020?style=for-the-badge&logo=bethesda&logoColor=white">
-  <img src="https://img.shields.io/badge/DynDOLOD-556B2F?style=for-the-badge&logo=tree&logoColor=white">
-  <br>
-  <img src="https://img.shields.io/badge/BodySlide-B22222?style=for-the-badge&logo=stylelint&logoColor=white">
-  <img src="https://img.shields.io/badge/CAO-4B0082?style=for-the-badge&logo=archive&logoColor=white">
-  <img src="https://img.shields.io/badge/BAE-DAA520?style=for-the-badge&logo=unpacker&logoColor=white">
+<img src="https://img.shields.io/badge/NifSkope-808080?style=for-the-badge&logo=icloud&logoColor=white">
+<img src="https://img.shields.io/badge/SSEEdit-4682B4?style=for-the-badge&logo=editor&logoColor=white">
+<img src="https://img.shields.io/badge/Creation%20Kit-202020?style=for-the-badge&logo=bethesda&logoColor=white">
+<img src="https://img.shields.io/badge/DynDOLOD-556B2F?style=for-the-badge&logo=tree&logoColor=white">
+<br>
+<img src="https://img.shields.io/badge/BodySlide-B22222?style=for-the-badge&logo=stylelint&logoColor=white">
+<img src="https://img.shields.io/badge/CAO-4B0082?style=for-the-badge&logo=archive&logoColor=white">
+<img src="https://img.shields.io/badge/BAE-DAA520?style=for-the-badge&logo=unpacker&logoColor=white">
+<p>
+<img src="https://img.shields.io/badge/HarmonyLib-Patching-blueviolet?style=for-the-badge&logo=gitbook&logoColor=white">
+<img src="https://img.shields.io/badge/Steam%20Workshop-Published-171a21?style=for-the-badge&logo=steam&logoColor=white">
+<img src="https://img.shields.io/badge/Runtime%20Hooking-Critical-red?style=for-the-badge">
+</p>
 </p>
 
-- **Activity**: 국내 게임 모딩 커뮤니티 및 카페에서 다수의 게임 시스템 모드 배포 및 운영
+- **Escape from Duckov (Unity Engine & C#)**:
+  - **HarmonyLib**을 활용한 **런타임 메서드 후킹(Method Hooking)** 및 로직 패치 구현
+  - 게임 엔진의 원본 소스 수정 없이 메모리 상에서 시스템 동작을 제어하는 고난도 모딩 수행
+  - .NET Framework 기반의 프로젝트 설계 및 Steam Workshop 배포 
 - **Skyrim & Fallout 4 (Creation Engine)**:
-  - 베데스다 전문 툴셋을 활용한 시스템 구축, 수정, 배포 및 **나만의 통합 환경(Custom Build) 설계**
-  - **사용자 대상 기술 지원**: 실시간 소통을 통해 모드 충돌 및 에러 해결 가이드 제공 (트러블슈팅)
-- **Cyberpunk 2077 (REDengine)**: 기존 모드 로직 분석 및 런타임 에러(외형 출력 버그 등) 해결을 통한 환경 안정화
+  - 베데스다 전문 툴셋(CK, SSEEdit 등)을 활용한 시스템 구축 및 **나만의 통합 환경(Custom Build) 설계**
+  - **사용자 기술 지원**: 커뮤니티 내 실시간 소통을 통해 모드 충돌 분석 및 트러블슈팅 가이드 제공
+- **Cyberpunk 2077 (REDengine)**:
+  - 기존 모드(Lua 기반) 로직 분석 및 런타임 에러(외형 출력 버그 등) 해결을 통한 환경 안정화
 
 ---
 
 ## 🛠 Tech Stack
 
-### 💻 Backend
+### 💻 Languages & Game Modding
 <p>
-<img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white">
+<img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white">
+<img src="https://img.shields.io/badge/.NET%20Framework%204.7.7-512BD4?style=for-the-badge&logo=.net&logoColor=white">
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
-<img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white">
-<img src="https://img.shields.io/badge/TypeORM-FE0803?style=for-the-badge&logo=typeorm&logoColor=white">
+<img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white">
 <br>
-<img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white">
-<img src="https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white">
-<img src="https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socketdotio&logoColor=white">
-<img src="https://img.shields.io/badge/Supabase%20Edge%20Functions-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white">
+<img src="https://img.shields.io/badge/HarmonyLib-Patching-blueviolet?style=for-the-badge&logo=gitbook&logoColor=white">
+<img src="https://img.shields.io/badge/Steam%20Workshop-Published-171a21?style=for-the-badge&logo=steam&logoColor=white">
 </p>
 
-### 🎨 Frontend
+### 💻 Backend & Desktop
 <p>
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black">
-<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white">
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
-<img src="https://img.shields.io/badge/Zustand-443E38?style=for-the-badge&logo=react&logoColor=white">
-<img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
-<img src="https://img.shields.io/badge/Styled--Components-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white">
+<img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white">
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
+<img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white">
+<img src="https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white">
+<img src="https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socketdotio&logoColor=white">
 <br>
-<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white">
+<img src="https://img.shields.io/badge/TypeORM-FE0803?style=for-the-badge&logo=typeorm&logoColor=white">
+<img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white">
+<img src="https://img.shields.io/badge/Supabase%20Edge%20Functions-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white">
+<img src="https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white">
+<img src="https://img.shields.io/badge/JSON%20Web%20Tokens-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white">
+</p>
+
+### 🎨 Frontend & Game Engine
+<p>
+<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white">
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black">
 <img src="https://img.shields.io/badge/Phaser-820AD1?style=for-the-badge&logo=phaser&logoColor=white">
-<img src="https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white">
 <img src="https://img.shields.io/badge/Matter.js-4B5563?style=for-the-badge&logo=matterdotjs&logoColor=white">
+<br>
+<img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
+<img src="https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white">
+<img src="https://img.shields.io/badge/Zustand-443E38?style=for-the-badge&logo=react&logoColor=white">
+<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white">
+<br>
 <img src="https://img.shields.io/badge/Web%20Audio%20API-9CF122?style=for-the-badge&logo=audio&logoColor=black">
+<img src="https://img.shields.io/badge/Lucide%20Icons-F75C7E?style=for-the-badge&logo=lucide&logoColor=white">
 </p>
 
 ### 🗄️ Database & Realtime
@@ -71,7 +93,9 @@
 <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white">
 <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white">
 <img src="https://img.shields.io/badge/Realtime-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white">
+<br>
 <img src="https://img.shields.io/badge/PostgreSQL%20Cron-336791?style=for-the-badge&logo=postgresql&logoColor=white">
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white">  
 </p>
 
 ### 🚀 DevOps & Infrastructure
@@ -84,6 +108,7 @@
 <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white">
 <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">
 <img src="https://img.shields.io/badge/Railway-131415?style=for-the-badge&logo=railway&logoColor=white">
+<img src="https://img.shields.io/badge/Nx-143055?style=for-the-badge&logo=nx&logoColor=white">
 </p>
 
 ### 🧪 Testing & Automation
@@ -111,9 +136,18 @@
 ---
 
 ## 🔭 Currently Working On
->- 다음 팀 프로젝트 아이디어 구상 중...
+>- 다음 개인 프로젝트 아이디어 구상 중...
 
 ## 🚀 Deployed & Live Projects
+
+### [🛡️ Storm Protection Shield (Escape from Duckov Mod)](https://github.com/yunsuper/Storm-Protection-Shield)
+> **"HarmonyLib을 활용한 게임 런타임 코드 패치 및 폭풍 보호 시스템 구현"**
+- **Status**: **`Production Ready`** (Steam Workshop 배포 완료)
+- **Tech**: C#, .NET Framework 4.7.7, **HarmonyLib**
+- **Key Point**: 
+  - 게임의 원본 코드를 손상시키지 않고 **Runtime Method Hooking**을 통해 로직을 제어
+  - Mac 환경에서 x64 아키텍처 기반의 안정적인 빌드 환경 구축
+- **Link**: [Steam Workshop 바로가기](https://steamcommunity.com/sharedfiles/filedetails/?id=3653375917)
 
 ### [💻 Dev-Connect: 실시간 공유 오피스](https://dev-connect-gules.vercel.app/)
 > **"개발자를 위한 힙한 감성의 실시간 몰입 및 소통 공간"**
@@ -153,17 +187,12 @@
 - **Status**: **`Completed`** (로컬 구동 완료)
 - **Key Point**: 라이브러리 없이 순수 자바스크립트로 **실시간 말풍선 채팅 및 점프 물리 로직**을 구현하며 탄탄한 기본기를 증명한 프로젝트입니다.
 
-### [♟️ Jjanggi Board Game](https://github.com/yunsuper/Jjanggi-Board-Game)
-> **"Vite와 Phaser를 활용한 온라인 장기 게임"**
-- **Tech**: JavaScript, **Vite**, **Phaser**, Socket.io
-- **Status**: **`Completed`** (로컬 구동 완료)
-- **Collaboration**: 팀원과 협업하여 게임 엔진 기반의 복잡한 보드게임 로직을 구현했습니다.
-
 ---
 
 ## 📁 More Projects Showcase
 | Project | Tech Stack | Key Point | Link |
 | :--- | :--- | :--- | :--- |
+| **♟️ Jjanggi Online** | `Phaser` `Socket.io` | 물리 엔진 기반 온라인 장기 로직 구현 | [🔗](https://github.com/yunsuper/Jjanggi-Board-Game) |
 | **▶️ AutoPlay Utility** | `JavaScript` | 동영상 연속 재생 북마크릿 유틸리티 | [🔗](https://github.com/yunsuper/AutoPlay) |
 | **📍 Travel Planner** | `JS` `Kakao API` | 첫 오픈 API 연동 및 웹 서비스 도전 | [🔗](https://github.com/yunsuper/travel-planner) |
 | **🍒 Cherry Notepad Pro** | `Electron` `JS` | Ad-hoc 서명이 적용된 데스크톱 메모 앱 | [🔗](https://github.com/yunsuper/Laser-Notepad-JS) |
