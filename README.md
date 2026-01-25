@@ -32,8 +32,8 @@
 
 - **Escape from Duckov (Unity Engine & C#)**:
   - **HarmonyLib**을 활용한 **런타임 메서드 후킹(Method Hooking)** 및 로직 패치 구현
-  - 게임 엔진의 원본 소스 수정 없이 메모리 상에서 시스템 동작을 제어하는 고난도 모딩 수행
-  - .NET Framework 기반의 프로젝트 설계 및 Steam Workshop 배포 
+  - 단순 상수값(플레이어 스탯 등) 수정을 넘어, **게임 내 동적 환경 변화에 대응하는 조건부 로직 가로채기** 및 실행 흐름 제어 수행
+  - .NET Framework 기반의 프로젝트 설계 및 Steam Workshop 배포 프로세스 완수
 - **Skyrim & Fallout 4 (Creation Engine)**:
   - 베데스다 전문 툴셋(CK, SSEEdit 등)을 활용한 시스템 구축 및 **나만의 통합 환경(Custom Build) 설계**
   - **사용자 기술 지원**: 커뮤니티 내 실시간 소통을 통해 모드 충돌 분석 및 트러블슈팅 가이드 제공
