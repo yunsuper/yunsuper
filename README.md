@@ -54,6 +54,7 @@
 <br>
 <img src="https://img.shields.io/badge/HarmonyLib-Patching-blueviolet?style=for-the-badge&logo=gitbook&logoColor=white">
 <img src="https://img.shields.io/badge/Steam%20Workshop-Published-171a21?style=for-the-badge&logo=steam&logoColor=white">
+<img src="https://img.shields.io/badge/Steam%20Workshop-2%20Published-171a21?style=for-the-badge&logo=steam&logoColor=white">
 </p>
 
 ### 💻 Backend & Desktop
@@ -139,6 +140,16 @@
 >- 다음 개인 프로젝트 아이디어 구상 중...
 
 ## 🚀 Deployed & Live Projects
+
+### [🦘 Cherry's Kinetic Jump (Escape from Duckov Mod)](https://github.com/yunsuper/MyJumpMod)
+> **"점프 기능이 없는 게임에 새로운 물리 법칙(Jump & Air Control)을 창조 및 주입"**
+- **Status**: **`Production Ready`** (Steam Workshop 배포 완료)
+- **Tech**: C#, .NET Framework 4.7.7, **HarmonyLib**
+- **Key Point**: 
+  - 점프 메커니즘이 존재하지 않는 게임 엔진 내에 **새로운 물리 로직을 설계 및 런타임 주입**
+  - **Infinite Jump**: 공중 연속 도약 및 운동학적(Kinetic) 로직을 통한 부드러운 **Air Control** 구현
+  - 유저 편의를 위한 Z키 트리거 바인딩 및 하모니 패치 안정성 확보
+- **Link**: [Steam Workshop 바로가기](https://steamcommunity.com/sharedfiles/filedetails/?id=3654572012)
 
 ### [🛡️ Storm Protection Shield (Escape from Duckov Mod)](https://github.com/yunsuper/Storm-Protection-Shield)
 > **"HarmonyLib을 활용한 게임 런타임 코드 패치 및 폭풍 보호 시스템 구현"**
