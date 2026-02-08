@@ -55,6 +55,9 @@
 <img src="https://img.shields.io/badge/HarmonyLib-Patching-blueviolet?style=for-the-badge&logo=gitbook&logoColor=white">
 <img src="https://img.shields.io/badge/Steam%20Workshop-Published-171a21?style=for-the-badge&logo=steam&logoColor=white">
 <img src="https://img.shields.io/badge/Steam%20Workshop-2%20Published-171a21?style=for-the-badge&logo=steam&logoColor=white">
+<br>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white">
 </p>
 
 ### 💻 Backend & Desktop
@@ -203,6 +206,7 @@
 ## 📁 More Projects Showcase
 | Project | Tech Stack | Key Point | Link |
 | :--- | :--- | :--- | :--- |
+| **🎬 Dead Reset Mac Patch** | `Python` `UnityPy` | **바이너리 에셋 수정을 통한 맥 전용 한글화 툴셋** | [🔗](https://github.com/yunsuper/DeadReset-KR-Patch-Mac) |
 | **♟️ Jjanggi Online** | `Phaser` `Socket.io` | 물리 엔진 기반 온라인 장기 로직 구현 | [🔗](https://github.com/yunsuper/Jjanggi-Board-Game) |
 | **▶️ AutoPlay Utility** | `JavaScript` | 동영상 연속 재생 북마크릿 유틸리티 | [🔗](https://github.com/yunsuper/AutoPlay) |
 | **📍 Travel Planner** | `JS` `Kakao API` | 첫 오픈 API 연동 및 웹 서비스 도전 | [🔗](https://github.com/yunsuper/travel-planner) |
