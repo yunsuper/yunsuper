@@ -140,9 +140,19 @@
 ---
 
 ## 🔭 Currently Working On
->- 다음 개인 프로젝트 아이디어 구상 중...
+>- '붉은 사막(Crimson Desert)' 게임 리소스 분석 및 macOS 전용 모딩 툴 추가 개발 중...
 
 ## 🚀 Deployed & Live Projects
+
+### [🗡️ Crimson Desert Font Modder (Mac)](https://github.com/yunsuper/CrimsonDesert-FontModder-Mac)
+> **LZ4 정밀 캘리브레이션 기술로 '붉은 사막'의 모든 폰트 슬롯을 완벽하게 제어하는 macOS 전용 오리지널 Python 모드
+- **Status**: **`Production Ready`** (Nexus 배포 완료)
+- **Tech**:  Python 3, Tkinter, LZ4 (Compression Engine), Binary Patching
+- **Key Point**:
+  - VFS Resolution: 붉은 사막의 .pamt 및 .paz 파일 구조를 분석하여 가상 파일 시스템 경로를 완벽하게 복원
+  - LZ4 Calibration: 원본 슬롯 크기에 맞춰 LZ4 압축 패딩을 실시간으로 정밀 조정(Calibration)하여 게임 안정성을 완벽히 유지
+  - GUI 기반 인터페이스로 macOS 환경에서 누구나 쉽게 커스텀 폰트(.ttf, .otf)를 모든 슬롯에 강제 적용 가능
+- **Link**: [Nexus 바로가기](https://www.nexusmods.com/crimsondesert/mods/115)
 
 ### [🦘 Cherry's Kinetic Jump (Escape from Duckov Mod)](https://github.com/yunsuper/MyJumpMod)
 > **"점프 기능이 없는 게임에 새로운 물리 법칙(Jump & Air Control)을 창조 및 주입"**
