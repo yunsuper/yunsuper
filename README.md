@@ -23,20 +23,31 @@
 <img src="https://img.shields.io/badge/BodySlide-B22222?style=for-the-badge&logo=stylelint&logoColor=white">
 <img src="https://img.shields.io/badge/CAO-4B0082?style=for-the-badge&logo=archive&logoColor=white">
 <img src="https://img.shields.io/badge/BAE-DAA520?style=for-the-badge&logo=unpacker&logoColor=white">
-<p>
 <img src="https://img.shields.io/badge/HarmonyLib-Patching-blueviolet?style=for-the-badge&logo=gitbook&logoColor=white">
 <img src="https://img.shields.io/badge/Steam%20Workshop-Published-171a21?style=for-the-badge&logo=steam&logoColor=white">
 <img src="https://img.shields.io/badge/Runtime%20Hooking-Critical-red?style=for-the-badge">
-</p>
+<p>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/LZ4-Compression-0052FF?style=for-the-badge&logo=speedtest&logoColor=white">
+<img src="https://img.shields.io/badge/VFS-Analyzer-FFD700?style=for-the-badge&logo=blueprint&logoColor=black">
+<br>
+<img src="https://img.shields.io/badge/Nexus%20Mods-Published-da7d25?style=for-the-badge&logo=nexusmods&logoColor=white">
+<img src="https://img.shields.io/badge/Binary%20Patching-Advanced-444444?style=for-the-badge">
 </p>
 
+- **Crimson Desert (BlackSpace Engine & Python)**:
+  - **VFS(Virtual File System)** 분석: .pamt 및 .paz 바이너리 구조 분석을 통해 리소스 메타데이터 복원 및 가상 파일 시스템 맵핑 구현 
+  - **LZ4 정밀 캘리브레이션**: 패칭 데이터의 압축 크기를 원본과 1바이트 단위로 일치시키는 정밀 패딩(Padding) 알고리즘 설계로 바이너리 직접 수정 안정성 확보
+  
 - **Escape from Duckov (Unity Engine & C#)**:
   - **HarmonyLib**을 활용한 **런타임 메서드 후킹(Method Hooking)** 및 로직 패치 구현
   - 단순 상수값(플레이어 스탯 등) 수정을 넘어, **게임 내 동적 환경 변화에 대응하는 조건부 로직 가로채기** 및 실행 흐름 제어 수행
   - .NET Framework 기반의 프로젝트 설계 및 Steam Workshop 배포 프로세스 완수
+    
 - **Skyrim & Fallout 4 (Creation Engine)**:
   - 베데스다 전문 툴셋(CK, SSEEdit 등)을 활용한 시스템 구축 및 **나만의 통합 환경(Custom Build) 설계**
   - **사용자 기술 지원**: 커뮤니티 내 실시간 소통을 통해 모드 충돌 분석 및 트러블슈팅 가이드 제공
+    
 - **Cyberpunk 2077 (REDengine)**:
   - 기존 모드(Lua 기반) 로직 분석 및 런타임 에러(외형 출력 버그 등) 해결을 통한 환경 안정화
 
@@ -141,6 +152,7 @@
 
 ## 🔭 Currently Working On
 >- '붉은 사막(Crimson Desert)' 게임 리소스 분석 및 macOS 전용 모딩 툴 추가 개발 중...
+
 
 ## 🚀 Deployed & Live Projects
 
