@@ -38,6 +38,13 @@
 <img src="https://img.shields.io/badge/Automation-007ACC?style=for-the-badge&logo=blueprint&logoColor=white">
 <img src="https://img.shields.io/badge/Nexus%20Mods-Published-da7d25?style=for-the-badge&logo=nexusmods&logoColor=white">
 <img src="https://img.shields.io/badge/Binary%20Patching-Advanced-444444?style=for-the-badge">
+<br>
+<p>
+<img src="https://img.shields.io/badge/LLDB-Debugging-blue?style=for-the-badge&logo=analyzer&logoColor=white">
+<img src="https://img.shields.io/badge/Memory-Analysis-FFD700?style=for-the-badge&logo=search&logoColor=black">
+<img src="https://img.shields.io/badge/Binary%20Data-Parsing-444444?style=for-the-badge&logo=code-review&logoColor=white">
+<img src="https://img.shields.io/badge/R%26D-Experimental-red?style=for-the-badge&logo=test-tube&logoColor=white">
+</p>
 </p>
 
 - **Crimson Desert (BlackSpace Engine & Python)**:
@@ -158,6 +165,15 @@
 
 ## 🔭 Currently Working On
 >- '붉은 사막(Crimson Desert)' 게임 리소스 분석 및 macOS 전용 모딩 툴 추가 개발 중...
+
+
+## 🔍 Technical Challenge: Runtime Memory Hijacking
+> **"엔진의 실시간 보호 로직 분석 및 메모리 덤프 자동화 연구"
+- Objective: 실시간 메모리 변조를 통한 '고스트-러너(Ghost-Runner)' 기능 구현 시도
+- Progress:
+  - lldb 배치 모드 스크립트를 설계하여 엔진의 탐지를 회피하는 Hit-and-Run 방식의 메모리 하이재킹 성공
+  - 16MB 이상의 런타임 덤프에서 struct 언패킹을 통한 시스템 변수 패턴 매칭 및 오프셋 특정 완료
+- Hurdle: 실시간 엔진 무결성 보호막(Memory Shield)으로 인한 값 유지 실패 → 현재 메모리 보호 루틴 우회(Bypass) 및 하트비트 로직 분석 단계 진행 중
 
 
 ## 🚀 Deployed & Live Projects
