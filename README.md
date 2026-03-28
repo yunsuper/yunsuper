@@ -28,9 +28,14 @@
 <img src="https://img.shields.io/badge/Runtime%20Hooking-Critical-red?style=for-the-badge">
 <p>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/Shell-Scripting-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white">
 <img src="https://img.shields.io/badge/LZ4-Compression-0052FF?style=for-the-badge&logo=speedtest&logoColor=white">
 <img src="https://img.shields.io/badge/VFS-Analyzer-FFD700?style=for-the-badge&logo=blueprint&logoColor=black">
 <br>
+<img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white">
+<img src="https://img.shields.io/badge/Reverse%20Engineering-FF5722?style=for-the-badge&logo=probot&logoColor=white">
+<img src="https://img.shields.io/badge/RegEx-424242?style=for-the-badge&logo=regex&logoColor=white">
+<img src="https://img.shields.io/badge/Automation-007ACC?style=for-the-badge&logo=blueprint&logoColor=white">
 <img src="https://img.shields.io/badge/Nexus%20Mods-Published-da7d25?style=for-the-badge&logo=nexusmods&logoColor=white">
 <img src="https://img.shields.io/badge/Binary%20Patching-Advanced-444444?style=for-the-badge">
 </p>
@@ -38,6 +43,7 @@
 - **Crimson Desert (BlackSpace Engine & Python)**:
   - **VFS(Virtual File System)** 분석: .pamt 및 .paz 바이너리 구조 분석을 통해 리소스 메타데이터 복원 및 가상 파일 시스템 맵핑 구현 
   - **LZ4 정밀 캘리브레이션**: 패칭 데이터의 압축 크기를 원본과 1바이트 단위로 일치시키는 정밀 패딩(Padding) 알고리즘 설계로 바이너리 직접 수정 안정성 확보
+  - **Precision Binary Patching**: 게임 시스템 로직이 담긴 바이너리를 직접 수정하여 엔진 레벨의 제약 사항(Inventory Limit 등)을 돌파
   
 - **Escape from Duckov (Unity Engine & C#)**:
   - **HarmonyLib**을 활용한 **런타임 메서드 후킹(Method Hooking)** 및 로직 패치 구현
@@ -165,6 +171,16 @@
   - LZ4 Calibration: 원본 슬롯 크기에 맞춰 LZ4 압축 패딩을 실시간으로 정밀 조정(Calibration)하여 게임 안정성을 완벽히 유지
   - GUI 기반 인터페이스로 macOS 환경에서 누구나 쉽게 커스텀 폰트(.ttf, .otf)를 모든 슬롯에 강제 적용 가능
 - **Link**: [Nexus 바로가기](https://www.nexusmods.com/crimsondesert/mods/115)
+
+### [🎒 Crimson Desert Inventory Mod (Mac)](https://github.com/yunsuper/CrimsonDesert-InventoryMod-Mac)
+> **"게임 내 가방 칸수 및 아이템 스택 한계를 돌파하는 시스템 패칭 툴"**
+- **Status**: **`Production Ready`** (Nexus 배포 완료)
+- **Tech**: Python 3, Binary Patching, LZ4 (Calibration Engine)
+- **Key Point**: 
+  - 인벤토리 데이터가 포함된 바이너리 구조를 분석하여 **가방 슬롯 및 무게 제한 로직** 정밀 수정
+  - 폰트 모더에서 검증된 LZ4 패딩 알고리즘을 적용하여 대규모 데이터 수정 시에도 세이브 파일 손상 방지
+  - macOS 환경에서 클릭 몇 번으로 인벤토리 밸런스를 조정할 수 있는 전용 인터페이스 제공
+- **Link**: [Nexus 바로가기](https://www.nexusmods.com/crimsondesert/mods/56)
 
 ### [🦘 Cherry's Kinetic Jump (Escape from Duckov Mod)](https://github.com/yunsuper/MyJumpMod)
 > **"점프 기능이 없는 게임에 새로운 물리 법칙(Jump & Air Control)을 창조 및 주입"**
