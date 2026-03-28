@@ -172,7 +172,7 @@
   - GUI 기반 인터페이스로 macOS 환경에서 누구나 쉽게 커스텀 폰트(.ttf, .otf)를 모든 슬롯에 강제 적용 가능
 - **Link**: [Nexus 바로가기](https://www.nexusmods.com/crimsondesert/mods/115)
 
-### [🎒 Crimson Desert Inventory Mod (Mac)](https://github.com/yunsuper/CrimsonDesert-InventoryMod-Mac)
+### [🎒 Crimson Desert Inventory Mod (Mac)](https://github.com/yunsuper/CrimsonDesert-Inventory-Expander-Mac)
 > **"게임 내 가방 칸수 및 아이템 스택 한계를 돌파하는 시스템 패칭 툴"**
 - **Status**: **`Production Ready`** (Nexus 배포 완료)
 - **Tech**: Python 3, Binary Patching, LZ4 (Calibration Engine)
