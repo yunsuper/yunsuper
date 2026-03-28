@@ -167,19 +167,19 @@
 - **Status**: **`Production Ready`** (Nexus 배포 완료)
 - **Tech**:  Python 3, Tkinter, LZ4 (Compression Engine), Binary Patching
 - **Key Point**:
-  - VFS Resolution: 붉은 사막의 .pamt 및 .paz 파일 구조를 분석하여 가상 파일 시스템 경로를 완벽하게 복원
-  - LZ4 Calibration: 원본 슬롯 크기에 맞춰 LZ4 압축 패딩을 실시간으로 정밀 조정(Calibration)하여 게임 안정성을 완벽히 유지
-  - GUI 기반 인터페이스로 macOS 환경에서 누구나 쉽게 커스텀 폰트(.ttf, .otf)를 모든 슬롯에 강제 적용 가능
+  - VFS Resolution: 붉은 사막의 .pamt 및 .paz 파일 구조를 분석하여 가상 파일 시스템 경로를 완벽하게 복원 및 리소스 매핑
+  - Inherited LZ4 Calibration: 원본 슬롯 크기에 맞춰 LZ4 압축 패딩을 실시간으로 정밀 조정(Calibration)하여 게임 안정성을 완벽히 유지
+  - GUI-Based Interface: GUI 기반 인터페이스로 macOS 환경에서 누구나 쉽게 커스텀 폰트(.ttf, .otf)를 모든 슬롯에 적용 가능
 - **Link**: [Nexus 바로가기](https://www.nexusmods.com/crimsondesert/mods/115)
 
 ### [🎒 Crimson Desert Inventory Mod (Mac)](https://github.com/yunsuper/CrimsonDesert-Inventory-Expander-Mac)
-> **"게임 내 가방 칸수 및 아이템 스택 한계를 돌파하는 시스템 패칭 툴"**
+> **"게임 내 가방 칸수를 확장하여 수집의 물리적 제약을 해소하는 시스템 패칭 툴"**
 - **Status**: **`Production Ready`** (Nexus 배포 완료)
-- **Tech**: Python 3, Binary Patching, LZ4 (Calibration Engine)
+- **Tech**: Python 3, Binary Patching & & Hex Analysis, LZ4 Calibration Engine
 - **Key Point**: 
-  - 인벤토리 데이터가 포함된 바이너리 구조를 분석하여 **가방 슬롯 및 무게 제한 로직** 정밀 수정
-  - 폰트 모더에서 검증된 LZ4 패딩 알고리즘을 적용하여 대규모 데이터 수정 시에도 세이브 파일 손상 방지
-  - macOS 환경에서 클릭 몇 번으로 인벤토리 밸런스를 조정할 수 있는 전용 인터페이스 제공
+  - VFS & System Logic Analysis: .pamt 및 .paz 바이너리 구조 분석을 통해 가상 파일 시스템 맵핑 및 게임 내 인벤토리 슬롯 확장 데이터 영역 특정
+  - Precision Binary Patching: 게임 시스템 로직이 담긴 바이너리를 직접 수정하여 엔진 레벨의 가방 공간 제약 사항(Inventory Limit)을 돌파
+  - Save-Safe Integrity Engine: 바이너리 패칭 시 데이터 길이가 변해도 무결성을 유지하는 **'정밀 패딩 알고리즘'**을 설계 및 적용. 세이브 파일 보호 및 런타임 안정성 확보
 - **Link**: [Nexus 바로가기](https://www.nexusmods.com/crimsondesert/mods/56)
 
 ### [🦘 Cherry's Kinetic Jump (Escape from Duckov Mod)](https://github.com/yunsuper/MyJumpMod)
