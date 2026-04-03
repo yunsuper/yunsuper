@@ -44,6 +44,11 @@
 <img src="https://img.shields.io/badge/Memory-Analysis-FFD700?style=for-the-badge&logo=search&logoColor=black">
 <img src="https://img.shields.io/badge/Binary%20Data-Parsing-444444?style=for-the-badge&logo=code-review&logoColor=white">
 <img src="https://img.shields.io/badge/R%26D-Experimental-red?style=for-the-badge&logo=test-tube&logoColor=white">
+<br>
+<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+<img src="https://img.shields.io/badge/ctypes-Native_Bridge-3776AB?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/Arch-x86__64_vs_ARM64-FF69B4?style=for-the-badge&logo=microchip&logoColor=white">
+<img src="https://img.shields.io/badge/Memory-Alignment-FFD700?style=for-the-badge&logo=blueprint&logoColor=black">
 </p>
 </p>
 
@@ -164,19 +169,35 @@
 ---
 
 ## 🔭 Currently Working On
->- '붉은 사막(Crimson Desert)' 게임 리소스 분석 및 macOS 전용 모딩 툴 추가 개발 중...
+>- '붉은 사막(Crimson Desert)' macOS 환경에서의 아키텍처 호환성(x86_64 vs ARM64) 분석 및 네이티브 모딩 파이프라인 연구 중...
 
+## 🔍 Deep Dive: Multi-Vector Reverse Engineering Research
+> **"런타임 하이재킹과 정적 바이너리 이식의 한계점 규명 및 우회 전략 연구"**
 
-## 🔍 Technical Challenge: Runtime Memory Hijacking
-> **"엔진의 실시간 보호 로직 분석 및 메모리 덤프 자동화 연구"
-- Objective: 실시간 메모리 변조를 통한 '고스트-러너(Ghost-Runner)' 기능 구현 시도
-- Progress:
-  - lldb 배치 모드 스크립트를 설계하여 엔진의 탐지를 회피하는 Hit-and-Run 방식의 메모리 하이재킹 성공
-  - 16MB 이상의 런타임 덤프에서 struct 언패킹을 통한 시스템 변수 패턴 매칭 및 오프셋 특정 완료
-- Hurdle: 실시간 엔진 무결성 보호막(Memory Shield)으로 인한 값 유지 실패 → 현재 메모리 보호 루틴 우회(Bypass) 및 하트비트 로직 분석 단계 진행 중
+### 1️⃣ Vector A: Runtime Memory Hijacking (Dynamic)
+- **Approach**: lldb 배치 모드를 통한 'Hit-and-Run' 방식의 메모리 하이재킹 시도
+- **Hurdle**: 실시간 엔진 무결성 보호막(Memory Shield) 및 하트비트 로직으로 인한 값 유지 실패
+- **Status**: 현재 하트비트 루틴 분석 및 동적 패턴 매칭(AOB Scan) 연구로 고도화 중
 
+### 2️⃣ Vector B: Static Binary Porting & Repacking (Static)
+- **Approach**: 동적 보호막 우회를 위해 윈도우용 모드 데이터를 맥OS 순정 PAZ에 직접 주입(Patching)하는 정공법 선회
+- **Technical Achievement**: 150만 개 에셋 인덱싱 엔진 구축 및 C++ 네이티브 LZ4-HC 압축 코어(`.dylib`) 개발 성공
+- **Conclusion**: x86_64와 ARM64 간의 데이터 직렬화(Serialization) 차이로 인한 `SIGBUS` 크래시 확인. **'이종 플랫폼 간 정적 바이너리 직접 이식의 기술적 불가능성'**을 최종 증명
+
+---
+> **"결론: 맥OS 모딩의 유일한 해법은 '맥 네이티브 데이터의 동적 메모리 변조'에 있음을 확인. 현재 연구의 초점을 다시 메모리 보호 루틴 우회(Bypass)로 재집중 중"**
 
 ## 🚀 Deployed & Live Projects
+
+### [🧬 Crimson Desert Binary Porting Research (Mac)](https://github.com/yunsuper/CrimsonDesert-Binary-Porting-Research)
+> **"윈도우(x86_64) 모드 데이터를 macOS(ARM64) 환경으로 이식하기 위한 아키텍처 호환성 및 바이너리 직렬화 정밀 분석"**
+- **Status**: **`Research Completed`** (Technical Roadmap Established)
+- **Tech**: Python 3, C++ (Native Library), ctypes, LZ4-HC, 16-byte Memory Alignment
+- **Key Point**:
+  - **Architecture Post-mortem**: 윈도우와 맥 엔진 간의 데이터 직렬화(Serialization) 및 구조체 패딩(Padding) 차이로 인한 `SIGBUS (Data Abort)` 근본 원인 규명 및 한계점 증명
+  - **Native C++ Engine**: 파이썬의 메모리 제어 한계를 넘기 위해 C++로 직접 설계한 **16바이트 정렬 압축 코어(`.dylib`)**를 개발하여 맥 네이티브 엔진과의 통신 성공
+  - **Massive Data Indexing**: 150만 개의 에셋 경로를 단 3초 만에 전수 조사하여 특정 바이너리 오프셋을 타격하는 정규식 기반의 초고속 패칭 파이프라인 구축
+- **Link**: [GitHub Repository 바로가기](https://github.com/yunsuper/CrimsonDesert-Binary-Porting-Research)
 
 ### [🗡️ Crimson Desert Font Modder (Mac)](https://github.com/yunsuper/CrimsonDesert-FontModder-Mac)
 > **LZ4 정밀 캘리브레이션 기술로 '붉은 사막'의 모든 폰트 슬롯을 완벽하게 제어하는 macOS 전용 오리지널 Python 모드
@@ -243,23 +264,13 @@
   - **Zustand & LocalStorage** 연동을 통한 당첨 히스토리 유지 및 하이드레이션 이슈 해결
 - **Link**: [https://whos-next-alpha.vercel.app/](https://whos-next-alpha.vercel.app/)
 
-### [🤖 Ollama Local Code Reviewer](https://github.com/yunsuper/Ollama-Local-Code-Reviewer)
-> **"로컬 LLM을 활용한 개인화 코드 리뷰 도구"**
-- **Tech**: Ollama, JavaScript, LLM Prompt Engineering
-- **Status**: **`Completed`** (로컬 구동 완료)
-- **Key Point**: 외부 API 비용이나 데이터 유출 걱정 없이 **로컬 환경(Ollama)**에서 효율적인 코드 리뷰가 가능하도록 구현했습니다.
-
-### [🌐 Metabus My Room](https://github.com/yunsuper/Metabus-My-Room)
-> **"Vanilla JS로 구현한 실시간 멀티플레이 메타버스"**
-- **Tech**: JavaScript (Vanilla), Socket.io, Node.js
-- **Status**: **`Completed`** (로컬 구동 완료)
-- **Key Point**: 라이브러리 없이 순수 자바스크립트로 **실시간 말풍선 채팅 및 점프 물리 로직**을 구현하며 탄탄한 기본기를 증명한 프로젝트입니다.
-
 ---
 
 ## 📁 More Projects Showcase
 | Project | Tech Stack | Key Point | Link |
 | :--- | :--- | :--- | :--- |
+| **🤖 Ollama Reviewer** | `Ollama` `JS` | **로컬 LLM 기반 보안 중심 코드 리뷰 도구** | [🔗](https://github.com/yunsuper/Ollama-Local-Code-Reviewer) |
+| **🌐 Metabus Room** | `Vanilla JS` `Socket.io` | **순수 JS 실시간 채팅 및 물리 로직 메타버스** | [🔗](https://github.com/yunsuper/Metabus-My-Room) |
 | **🎬 Dead Reset Mac Patch** | `Python` `UnityPy` | **바이너리 에셋 수정을 통한 맥 전용 한글화 툴셋** | [🔗](https://github.com/yunsuper/DeadReset-KR-Patch-Mac) |
 | **♟️ Jjanggi Online** | `Phaser` `Socket.io` | 물리 엔진 기반 온라인 장기 로직 구현 | [🔗](https://github.com/yunsuper/Jjanggi-Board-Game) |
 | **▶️ AutoPlay Utility** | `JavaScript` | 동영상 연속 재생 북마크릿 유틸리티 | [🔗](https://github.com/yunsuper/AutoPlay) |
