@@ -171,21 +171,18 @@
 ## 🔭 Currently Working On
 >- '붉은 사막(Crimson Desert)' macOS 환경에서의 아키텍처 호환성(x86_64 vs ARM64) 분석 및 네이티브 모딩 파이프라인 연구 중...
 
-## 🔍 Deep Dive: Multi-Vector Reverse Engineering Research
-> **"런타임 하이재킹과 정적 바이너리 이식의 한계점 규명 및 우회 전략 연구"**
-
 ### 1️⃣ Vector A: Runtime Memory Hijacking (Dynamic)
 - **Approach**: lldb 배치 모드를 통한 'Hit-and-Run' 방식의 메모리 하이재킹 시도
-- **Hurdle**: 실시간 엔진 무결성 보호막(Memory Shield) 및 하트비트 로직으로 인한 값 유지 실패
-- **Status**: 현재 하트비트 루틴 분석 및 동적 패턴 매칭(AOB Scan) 연구로 고도화 중
+- **Hurdle**: 엔진 무결성 보호막(Memory Shield) 및 하트비트 로직 확인
+- **Conclusion**: 실시간 메모리 변조의 기술적 장벽을 확인하고, 우회를 위한 이론적 메커니즘 정립 완료
 
 ### 2️⃣ Vector B: Static Binary Porting & Repacking (Static)
-- **Approach**: 동적 보호막 우회를 위해 윈도우용 모드 데이터를 맥OS 순정 PAZ에 직접 주입(Patching)하는 정공법 선회
-- **Technical Achievement**: 150만 개 에셋 인덱싱 엔진 구축 및 C++ 네이티브 LZ4-HC 압축 코어(`.dylib`) 개발 성공
+- **Approach**: 윈도우 모드 데이터를 맥OS 순정 PAZ에 주입하는 정공법 시도
+- **Technical Achievement**: 150만 개 에셋 인덱싱 엔진 및 C++ 네이티브 LZ4-HC 압축 코어(`.dylib`) 개발 성공
 - **Conclusion**: x86_64와 ARM64 간의 데이터 직렬화(Serialization) 차이로 인한 `SIGBUS` 크래시 확인. **'이종 플랫폼 간 정적 바이너리 직접 이식의 기술적 불가능성'**을 최종 증명
 
 ---
-> **"결론: 맥OS 모딩의 유일한 해법은 '맥 네이티브 데이터의 동적 메모리 변조'에 있음을 확인. 현재 연구의 초점을 다시 메모리 보호 루틴 우회(Bypass)로 재집중 중"**
+> **"Final Result: 본 연구는 이 지점에서 마침표를 찍으며, 맥OS 환경에서의 모딩 해법이 '맥 네이티브 데이터의 동적 메모리 변조'에 있음을 공학적으로 규명하였습니다. 이 기록을 향후 연구자들을 위한 기술적 초석(Roadmap)으로 남깁니다."**
 
 ## 🚀 Deployed & Live Projects
 
