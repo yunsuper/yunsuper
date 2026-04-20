@@ -266,6 +266,7 @@
 ## 📁 More Projects Showcase
 | Project | Tech Stack | Key Point | Link |
 | :--- | :--- | :--- | :--- |
+| **🎮 CrimsonDesert ModMerger** | `Python` | **붉은사막 JSON 모드 오프셋 자동 보정 및 God Mask 호환 패치 툴** | [🔗](https://github.com/yunsuper/CrimsonDesert-ModMerger) | 
 | **🤖 Ollama Reviewer** | `Ollama` `JS` | **로컬 LLM 기반 보안 중심 코드 리뷰 도구** | [🔗](https://github.com/yunsuper/Ollama-Local-Code-Reviewer) |
 | **🌐 Metabus Room** | `Vanilla JS` `Socket.io` | **순수 JS 실시간 채팅 및 물리 로직 메타버스** | [🔗](https://github.com/yunsuper/Metabus-My-Room) |
 | **🎬 Dead Reset Mac Patch** | `Python` `UnityPy` | **바이너리 에셋 수정을 통한 맥 전용 한글화 툴셋** | [🔗](https://github.com/yunsuper/DeadReset-KR-Patch-Mac) |
