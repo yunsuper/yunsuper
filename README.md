@@ -266,7 +266,7 @@
 ## 📁 More Projects Showcase
 | Project | Tech Stack | Key Point | Link |
 | :--- | :--- | :--- | :--- |
-| **🔄 Serverless Keepalive** | `GitHub Actions` `Python` | **노트북 꺼져있어도 매일 자동 실행 - Render/Supabase Free Tier 슬립 방지** | [🔗](https://github.com/yunsuper/serverless-keepalive) |
+| **🔄 Serverless Keepalive (Template)** | `GitHub Actions` `Python` | **노트북 꺼져있어도 매일 자동 실행 - Render/Supabase Free Tier 슬립 방지** | [🔗](https://github.com/yunsuper/serverless-keepalive) |
 | **🎮 CrimsonDesert ModMerger** | `Python` | **붉은사막 JSON 모드 오프셋 자동 보정 및 God Mask 호환 패치 툴** | [🔗](https://github.com/yunsuper/CrimsonDesert-ModMerger) | 
 | **🤖 Ollama Reviewer** | `Ollama` `JS` | **로컬 LLM 기반 보안 중심 코드 리뷰 도구** | [🔗](https://github.com/yunsuper/Ollama-Local-Code-Reviewer) |
 | **🌐 Metabus Room** | `Vanilla JS` `Socket.io` | **순수 JS 실시간 채팅 및 물리 로직 메타버스** | [🔗](https://github.com/yunsuper/Metabus-My-Room) |
