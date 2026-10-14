@@ -224,7 +224,8 @@
   - **Lipmap Merge**: 한국어 원본 립싱크 목록을 보존한 채 V 항목만 선별 병합하여 NPC 입모양과 기존 한국어 데이터 손상 방지
   - **Data Integrity**: 왕복 변환 바이트 동일성 검증 및 패킹 결과 전수 비교로 데이터 무결성 확보
   - **Permission & Credit**: 원작자 허락 후 애드온 형태로 배포, 원본 모드를 필수 요구 사항으로 명시
-- **Link**: [Nexus 바로가기](https://www.nexusmods.com/cyberpunk2077/mods/35165) · [인게임 영상](https://youtu.be/BUVCYmAJE1Q)
+  - **Reproducible Pipeline**: 병합 과정을 원본 데이터 없이 사용자 PC에서 재현하는 오픈소스 도구([ITP Lipsync Merger](https://github.com/yunsuper/Cyberpunk2077-ITP-Lipsync-Merger))로 공개, 다른 음성 언어로도 확장 가능
+- **Link**: [Nexus 바로가기](https://www.nexusmods.com/cyberpunk2077/mods/35165) · [GitHub (Merger 도구)](https://github.com/yunsuper/Cyberpunk2077-ITP-Lipsync-Merger) · [인게임 영상](https://youtu.be/BUVCYmAJE1Q)
 
 ### [🧬 Crimson Desert Binary Porting Research (Mac)](https://github.com/yunsuper/CrimsonDesert-Binary-Porting-Research)
 > **"윈도우(x86_64) 모드 데이터를 macOS(ARM64) 환경으로 이식하기 위한 아키텍처 호환성 및 바이너리 직렬화 정밀 분석"**
@@ -306,6 +307,7 @@
 ## 📁 More Projects Showcase
 | Project | Tech Stack | Key Point | Link |
 | :--- | :--- | :--- | :--- |
+| **🎙️ ITP Lipsync Merger** | `Python` `WolvenKit CLI` | **사이버펑크 3인칭 모드의 영어 전용 V 립싱크를 다른 음성 언어로 병합하는 도구** | [🔗](https://github.com/yunsuper/Cyberpunk2077-ITP-Lipsync-Merger) |
 | **🔄 Serverless Keepalive (Template)** | `GitHub Actions` `Python` | **노트북 꺼져있어도 매일 자동 실행 - Render/Supabase Free Tier 슬립 방지** | [🔗](https://github.com/yunsuper/serverless-keepalive) |
 | **🎮 CrimsonDesert ModMerger** | `Python` | **붉은사막 JSON 모드 오프셋 자동 보정 및 God Mask 호환 패치 툴** | [🔗](https://github.com/yunsuper/CrimsonDesert-ModMerger) | 
 | **🤖 Ollama Reviewer** | `Ollama` `JS` | **로컬 LLM 기반 보안 중심 코드 리뷰 도구** | [🔗](https://github.com/yunsuper/Ollama-Local-Code-Reviewer) |
