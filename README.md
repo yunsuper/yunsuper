@@ -24,7 +24,7 @@
 <img src="https://img.shields.io/badge/CAO-4B0082?style=for-the-badge&logo=archive&logoColor=white">
 <img src="https://img.shields.io/badge/BAE-DAA520?style=for-the-badge&logo=unpacker&logoColor=white">
 <img src="https://img.shields.io/badge/HarmonyLib-Patching-blueviolet?style=for-the-badge&logo=gitbook&logoColor=white">
-<img src="https://img.shields.io/badge/Steam%20Workshop-Published-171a21?style=for-the-badge&logo=steam&logoColor=white">
+<img src="https://img.shields.io/badge/Steam%20Workshop-2%20Published-171a21?style=for-the-badge&logo=steam&logoColor=white">
 <img src="https://img.shields.io/badge/Runtime%20Hooking-Critical-red?style=for-the-badge">
 <p>
 <img src="https://img.shields.io/badge/WolvenKit%209.1.0-CLI%20%26%20GUI-D0021B?style=for-the-badge&logo=cdprojektred&logoColor=white">
@@ -32,7 +32,6 @@
 <img src="https://img.shields.io/badge/redscript-Game%20Script-FCEE0A?style=for-the-badge&logo=cyberpunk&logoColor=black">
 <img src="https://img.shields.io/badge/MO2-Mod%20Organizer-1E3A5F?style=for-the-badge&logo=windows&logoColor=white">
 <br>
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
 <img src="https://img.shields.io/badge/Shell-Scripting-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white">
 <img src="https://img.shields.io/badge/LZ4-Compression-0052FF?style=for-the-badge&logo=speedtest&logoColor=white">
 <img src="https://img.shields.io/badge/VFS-Analyzer-FFD700?style=for-the-badge&logo=blueprint&logoColor=black">
@@ -50,7 +49,6 @@
 <img src="https://img.shields.io/badge/Binary%20Data-Parsing-444444?style=for-the-badge&logo=code-review&logoColor=white">
 <img src="https://img.shields.io/badge/R%26D-Experimental-red?style=for-the-badge&logo=test-tube&logoColor=white">
 <br>
-<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
 <img src="https://img.shields.io/badge/ctypes-Native_Bridge-3776AB?style=for-the-badge&logo=python&logoColor=white">
 <img src="https://img.shields.io/badge/Arch-x86__64_vs_ARM64-FF69B4?style=for-the-badge&logo=microchip&logoColor=white">
 <img src="https://img.shields.io/badge/Memory-Alignment-FFD700?style=for-the-badge&logo=blueprint&logoColor=black">
@@ -88,11 +86,8 @@
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white">
 <br>
-<img src="https://img.shields.io/badge/HarmonyLib-Patching-blueviolet?style=for-the-badge&logo=gitbook&logoColor=white">
-<img src="https://img.shields.io/badge/Steam%20Workshop-Published-171a21?style=for-the-badge&logo=steam&logoColor=white">
-<img src="https://img.shields.io/badge/Steam%20Workshop-2%20Published-171a21?style=for-the-badge&logo=steam&logoColor=white">
-<br>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
 <img src="https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white">
 </p>
 
@@ -108,7 +103,6 @@
 <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white">
 <img src="https://img.shields.io/badge/Supabase%20Edge%20Functions-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white">
 <img src="https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white">
-<img src="https://img.shields.io/badge/JSON%20Web%20Tokens-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white">
 </p>
 
 ### 🎨 Frontend & Game Engine
