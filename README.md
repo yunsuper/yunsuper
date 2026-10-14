@@ -180,16 +180,11 @@
 
 ### 1️⃣ Korean VO Lipsync (Nexus 배포 완료)
 - **Problem**: 립싱크 데이터는 **음성 언어**를 따르는데, 원본 모드의 V 립싱크는 영어 음성(`en-us`) 전용이라 한국어 더빙에서는 3인칭 V의 입이 움직이지 않음
-- **Approach**: WolvenKit CLI로 `.lipmap`(CR2W) ↔ JSON 변환 후, 영어 목록을 통째로 덮어쓰지 않고 **한국어 원본(`kr-kr`) 목록에 V 항목만 병합**
-  - 기존 장면 786개에 V 립싱크 추가 · 한국어 원본에 이미 있던 V 데이터 134개는 보존 · 신규 장면 9개 추가
-  - 결과 `kr-kr.lipmap`: 장면 3,453개 / V 애니메이션 795개를 `kr-kr` 경로로 재배치
-- **Verification**: 원본 lipmap 왕복 변환 시 바이트 단위 동일 확인, 패킹 결과물 재추출 후 전수 비교, 인게임 대화 장면 테스트
-- **Release**: 원작자(CybrDrake)의 허락을 받아 애드온으로 공개, 원본 모드를 필수 요구 사항으로 등록
+- **Approach**: WolvenKit CLI로 `.lipmap` ↔ JSON 변환 후, **한국어 원본(`kr-kr`) 목록에 V 항목만 병합** (V 애니메이션 795개)
 
 ### 2️⃣ V2 한글화 (CET Lua & redscript)
-- **Scope**: CET `init.lua`(15,000줄+)의 UI 문자열 161개, 애드온 API 문구, redscript 알림·첫 실행 팝업 번역
-- **Challenge**: V2의 탭·섹션 이름이 아이콘과 검색의 **내부 키**로도 쓰여, 문자열을 직접 바꾸면 UI가 깨짐
-- **Solution**: 내부 키는 영어로 유지하고 **화면에 그릴 때만 한글로 매핑**하는 표시 레이어 추가 → 한글·영어 검색 모두 지원. 설정 저장값·팝업 판정 문자열 등 로직용 문자열은 원문 유지, diff로 변경 범위 검증
+- **Scope**: CET `init.lua`(15,000줄+)의 UI 문자열 161개와 redscript 알림·팝업 번역
+- **Solution**: 탭·섹션 이름이 아이콘과 검색의 **내부 키**로도 쓰여, 키는 영어로 유지하고 **화면에 그릴 때만 한글로 매핑**하는 표시 레이어 추가
 
 <details>
 <summary><b>📦 Previous Research — 붉은 사막(Crimson Desert) macOS 네이티브 모딩 연구 (종료)</b></summary>
@@ -222,9 +217,7 @@
 - **Tech**: WolvenKit 9.1 (CLI), CR2W ↔ JSON, Python, MO2
 - **Key Point**:
   - **Lipmap Merge**: 한국어 원본 립싱크 목록을 보존한 채 V 항목만 선별 병합하여 NPC 입모양과 기존 한국어 데이터 손상 방지
-  - **Data Integrity**: 왕복 변환 바이트 동일성 검증 및 패킹 결과 전수 비교로 데이터 무결성 확보
-  - **Permission & Credit**: 원작자 허락 후 애드온 형태로 배포, 원본 모드를 필수 요구 사항으로 명시
-  - **Reproducible Pipeline**: 병합 과정을 원본 데이터 없이 사용자 PC에서 재현하는 오픈소스 도구([ITP Lipsync Merger](https://github.com/yunsuper/Cyberpunk2077-ITP-Lipsync-Merger))로 공개, 다른 음성 언어로도 확장 가능
+  - **Reproducible Pipeline**: 병합 과정을 원본 데이터 없이 재현하는 오픈소스 도구로 공개, 다른 음성 언어로도 확장 가능
 - **Link**: [Nexus 바로가기](https://www.nexusmods.com/cyberpunk2077/mods/35165) · [GitHub (Merger 도구)](https://github.com/yunsuper/Cyberpunk2077-ITP-Lipsync-Merger) · [인게임 영상](https://youtu.be/BUVCYmAJE1Q)
 
 ### [🧬 Crimson Desert Binary Porting Research (Mac)](https://github.com/yunsuper/CrimsonDesert-Binary-Porting-Research)
