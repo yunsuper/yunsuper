@@ -24,6 +24,7 @@
 <img src="https://img.shields.io/badge/CAO-4B0082?style=for-the-badge&logo=archive&logoColor=white">
 <img src="https://img.shields.io/badge/BAE-DAA520?style=for-the-badge&logo=unpacker&logoColor=white">
 <img src="https://img.shields.io/badge/HarmonyLib-Patching-blueviolet?style=for-the-badge&logo=gitbook&logoColor=white">
+<img src="https://img.shields.io/badge/UnityPy-Asset%20Patching-000000?style=for-the-badge&logo=unity&logoColor=white">
 <img src="https://img.shields.io/badge/Steam%20Workshop-2%20Published-171a21?style=for-the-badge&logo=steam&logoColor=white">
 <img src="https://img.shields.io/badge/Runtime%20Hooking-Critical-red?style=for-the-badge">
 <p>
@@ -33,6 +34,7 @@
 <img src="https://img.shields.io/badge/MO2-Mod%20Organizer-1E3A5F?style=for-the-badge&logo=windows&logoColor=white">
 <br>
 <img src="https://img.shields.io/badge/Shell-Scripting-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white">
+<img src="https://img.shields.io/badge/PowerShell-Scripting-5391FE?style=for-the-badge&logo=powershell&logoColor=white">
 <img src="https://img.shields.io/badge/LZ4-Compression-0052FF?style=for-the-badge&logo=speedtest&logoColor=white">
 <img src="https://img.shields.io/badge/VFS-Analyzer-FFD700?style=for-the-badge&logo=blueprint&logoColor=black">
 <br>
@@ -103,6 +105,7 @@
 <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white">
 <img src="https://img.shields.io/badge/Supabase%20Edge%20Functions-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white">
 <img src="https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white">
+<img src="https://img.shields.io/badge/Tkinter-GUI-3776AB?style=for-the-badge&logo=python&logoColor=white">
 </p>
 
 ### 🎨 Frontend & Game Engine
@@ -142,6 +145,7 @@
 <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white">
 <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">
 <img src="https://img.shields.io/badge/Railway-131415?style=for-the-badge&logo=railway&logoColor=white">
+<img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black">
 <img src="https://img.shields.io/badge/Nx-143055?style=for-the-badge&logo=nx&logoColor=white">
 </p>
 
