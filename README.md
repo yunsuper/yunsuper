@@ -27,6 +27,11 @@
 <img src="https://img.shields.io/badge/Steam%20Workshop-Published-171a21?style=for-the-badge&logo=steam&logoColor=white">
 <img src="https://img.shields.io/badge/Runtime%20Hooking-Critical-red?style=for-the-badge">
 <p>
+<img src="https://img.shields.io/badge/WolvenKit%209.1.0-CLI%20%26%20GUI-D0021B?style=for-the-badge&logo=cdprojektred&logoColor=white">
+<img src="https://img.shields.io/badge/CET-Lua%20Scripting-2C2D72?style=for-the-badge&logo=lua&logoColor=white">
+<img src="https://img.shields.io/badge/redscript-Game%20Script-FCEE0A?style=for-the-badge&logo=cyberpunk&logoColor=black">
+<img src="https://img.shields.io/badge/MO2-Mod%20Organizer-1E3A5F?style=for-the-badge&logo=windows&logoColor=white">
+<br>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
 <img src="https://img.shields.io/badge/Shell-Scripting-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white">
 <img src="https://img.shields.io/badge/LZ4-Compression-0052FF?style=for-the-badge&logo=speedtest&logoColor=white">
@@ -52,6 +57,11 @@
 </p>
 </p>
 
+- **Cyberpunk 2077 (REDengine 4 · CET Lua & redscript)**:
+  - **Lipsync Data Engineering**: WolvenKit CLI로 `.lipmap`(CR2W) ↔ JSON 변환 후 언어별 립싱크 목록을 병합하여, 영어 전용 데이터를 한국어 음성 환경에 이식
+  - **Non-destructive Localization**: 내부 키(아이콘·검색·설정 저장값)는 원문으로 유지하고 화면 표시 단계에서만 한글로 매핑하는 레이어 설계
+  - 기존 모드 로직 분석 및 런타임 에러(외형 출력 버그 등) 해결을 통한 환경 안정화
+
 - **Crimson Desert (BlackSpace Engine & Python)**:
   - **VFS(Virtual File System)** 분석: .pamt 및 .paz 바이너리 구조 분석을 통해 리소스 메타데이터 복원 및 가상 파일 시스템 맵핑 구현 
   - **LZ4 정밀 캘리브레이션**: 패칭 데이터의 압축 크기를 원본과 1바이트 단위로 일치시키는 정밀 패딩(Padding) 알고리즘 설계로 바이너리 직접 수정 안정성 확보
@@ -65,9 +75,6 @@
 - **Skyrim & Fallout 4 (Creation Engine)**:
   - 베데스다 전문 툴셋(CK, SSEEdit 등)을 활용한 시스템 구축 및 **나만의 통합 환경(Custom Build) 설계**
   - **사용자 기술 지원**: 커뮤니티 내 실시간 소통을 통해 모드 충돌 분석 및 트러블슈팅 가이드 제공
-    
-- **Cyberpunk 2077 (REDengine)**:
-  - 기존 모드(Lua 기반) 로직 분석 및 런타임 에러(외형 출력 버그 등) 해결을 통한 환경 안정화
 
 ---
 
@@ -169,22 +176,55 @@
 ---
 
 ## 🔭 Currently Working On
->- '붉은 사막(Crimson Desert)' macOS 환경에서의 아키텍처 호환성(x86_64 vs ARM64) 분석 및 네이티브 모딩 파이프라인 연구 중...
+>- '사이버펑크 2077(Cyberpunk 2077)' 3인칭 시점 모드 **Immersive Third Person V2**의 한국어 환경 지원 (한글화 + 한국어 음성 립싱크) 진행 중...
+
+### 1️⃣ Korean VO Lipsync (Nexus 배포 완료)
+- **Problem**: 립싱크 데이터는 **음성 언어**를 따르는데, 원본 모드의 V 립싱크는 영어 음성(`en-us`) 전용이라 한국어 더빙에서는 3인칭 V의 입이 움직이지 않음
+- **Approach**: WolvenKit CLI로 `.lipmap`(CR2W) ↔ JSON 변환 후, 영어 목록을 통째로 덮어쓰지 않고 **한국어 원본(`kr-kr`) 목록에 V 항목만 병합**
+  - 기존 장면 786개에 V 립싱크 추가 · 한국어 원본에 이미 있던 V 데이터 134개는 보존 · 신규 장면 9개 추가
+  - 결과 `kr-kr.lipmap`: 장면 3,453개 / V 애니메이션 795개를 `kr-kr` 경로로 재배치
+- **Verification**: 원본 lipmap 왕복 변환 시 바이트 단위 동일 확인, 패킹 결과물 재추출 후 전수 비교, 인게임 대화 장면 테스트
+- **Release**: 원작자(CybrDrake)의 허락을 받아 애드온으로 공개, 원본 모드를 필수 요구 사항으로 등록
+
+### 2️⃣ V2 한글화 (CET Lua & redscript)
+- **Scope**: CET `init.lua`(15,000줄+)의 UI 문자열 161개, 애드온 API 문구, redscript 알림·첫 실행 팝업 번역
+- **Challenge**: V2의 탭·섹션 이름이 아이콘과 검색의 **내부 키**로도 쓰여, 문자열을 직접 바꾸면 UI가 깨짐
+- **Solution**: 내부 키는 영어로 유지하고 **화면에 그릴 때만 한글로 매핑**하는 표시 레이어 추가 → 한글·영어 검색 모두 지원. 설정 저장값·팝업 판정 문자열 등 로직용 문자열은 원문 유지, diff로 변경 범위 검증
+
+<details>
+<summary><b>📦 Previous Research — 붉은 사막(Crimson Desert) macOS 네이티브 모딩 연구 (종료)</b></summary>
+
+<br>
+
+> '붉은 사막' macOS 환경에서의 아키텍처 호환성(x86_64 vs ARM64) 분석 및 네이티브 모딩 파이프라인 연구
 
 ### 1️⃣ Vector A: Runtime Memory Hijacking (Dynamic)
-- **Approach**: lldb 배치 모드를 통한 'Hit-and-Run' 방식의 메모리 하이재킹 시도
-- **Hurdle**: 엔진 무결성 보호막(Memory Shield) 및 하트비트 로직 확인
-- **Conclusion**: 실시간 메모리 변조의 기술적 장벽을 확인하고, 우회를 위한 이론적 메커니즘 정립 완료
+- **Approach**: lldb 배치 모드를 통한 'Hit-and-Run' 방식의 메모리 변조 시도
+- **Hurdle**: 엔진 무결성 보호(Memory Shield) 및 하트비트 로직 확인
+- **Result**: 실시간 메모리 변조의 기술적 장벽을 확인하고, 우회 메커니즘을 이론적으로 정리
 
 ### 2️⃣ Vector B: Static Binary Porting & Repacking (Static)
-- **Approach**: 윈도우 모드 데이터를 맥OS 순정 PAZ에 주입하는 정공법 시도
-- **Technical Achievement**: 150만 개 에셋 인덱싱 엔진 및 C++ 네이티브 LZ4-HC 압축 코어(`.dylib`) 개발 성공
-- **Conclusion**: x86_64와 ARM64 간의 데이터 직렬화(Serialization) 차이로 인한 `SIGBUS` 크래시 확인. **'이종 플랫폼 간 정적 바이너리 직접 이식의 기술적 불가능성'**을 최종 증명
+- **Approach**: 윈도우 모드 데이터를 맥OS 순정 PAZ에 주입하는 방식 시도
+- **Technical Achievement**: 150만 개 에셋 인덱싱 엔진 및 C++ 네이티브 LZ4-HC 압축 코어(`.dylib`) 개발
+- **Result**: x86_64와 ARM64 간의 데이터 직렬화(Serialization) 차이로 인한 `SIGBUS` 크래시 확인. 이종 플랫폼 간 정적 바이너리 직접 이식은 현실적으로 어렵다고 판단
+
+> **Conclusion**: macOS 환경에서의 유력한 모딩 방향은 '맥 네이티브 데이터 기반의 동적 메모리 변조'로 정리하고 연구를 마무리했습니다. 상세 기록은 [Binary Porting Research 레포](https://github.com/yunsuper/CrimsonDesert-Binary-Porting-Research)에 남겨두었습니다.
+
+</details>
 
 ---
-> **"Final Result: 본 연구는 이 지점에서 마침표를 찍으며, 맥OS 환경에서의 모딩 해법이 '맥 네이티브 데이터의 동적 메모리 변조'에 있음을 공학적으로 규명하였습니다. 이 기록을 향후 연구자들을 위한 기술적 초석(Roadmap)으로 남깁니다."**
 
 ## 🚀 Deployed & Live Projects
+
+### [🎙️ Immersive Third Person V2 - Korean VO Lipsync (Cyberpunk 2077 Mod)](https://www.nexusmods.com/cyberpunk2077/mods/35165)
+> **"한국어 더빙으로 플레이할 때도 3인칭 V의 입이 움직이도록, 영어 전용 립싱크 데이터를 한국어 음성 환경에 이식"**
+- **Status**: **`Production Ready`** (Nexus 배포 완료)
+- **Tech**: WolvenKit 9.1 (CLI), CR2W ↔ JSON, Python, MO2
+- **Key Point**:
+  - **Lipmap Merge**: 한국어 원본 립싱크 목록을 보존한 채 V 항목만 선별 병합하여 NPC 입모양과 기존 한국어 데이터 손상 방지
+  - **Data Integrity**: 왕복 변환 바이트 동일성 검증 및 패킹 결과 전수 비교로 데이터 무결성 확보
+  - **Permission & Credit**: 원작자 허락 후 애드온 형태로 배포, 원본 모드를 필수 요구 사항으로 명시
+- **Link**: [Nexus 바로가기](https://www.nexusmods.com/cyberpunk2077/mods/35165) · [인게임 영상](https://youtu.be/BUVCYmAJE1Q)
 
 ### [🧬 Crimson Desert Binary Porting Research (Mac)](https://github.com/yunsuper/CrimsonDesert-Binary-Porting-Research)
 > **"윈도우(x86_64) 모드 데이터를 macOS(ARM64) 환경으로 이식하기 위한 아키텍처 호환성 및 바이너리 직렬화 정밀 분석"**
@@ -230,7 +270,7 @@
 > **"HarmonyLib을 활용한 게임 런타임 코드 패치 및 폭풍 보호 시스템 구현"**
 - **Status**: **`Production Ready`** (Steam Workshop 배포 완료)
 - **Tech**: C#, .NET Framework 4.7.7, **HarmonyLib**
-- **Key Point**: 
+- **Key Point**: 
   - 게임의 원본 코드를 손상시키지 않고 **Runtime Method Hooking**을 통해 로직을 제어
   - Mac 환경에서 x64 아키텍처 기반의 안정적인 빌드 환경 구축
 - **Link**: [Steam Workshop 바로가기](https://steamcommunity.com/sharedfiles/filedetails/?id=3653375917)
@@ -301,4 +341,3 @@
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
 </a>
 </p>
-
