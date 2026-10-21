@@ -272,32 +272,6 @@
   - Mac 환경에서 x64 아키텍처 기반의 안정적인 빌드 환경 구축
 - **Link**: [Steam Workshop 바로가기](https://steamcommunity.com/sharedfiles/filedetails/?id=3653375917)
 
-### [💻 Dev-Connect: 실시간 공유 오피스](https://dev-connect-gules.vercel.app/)
-> **"개발자를 위한 힙한 감성의 실시간 몰입 및 소통 공간"**
-- **Status**: **`Production Ready`** (배포 완료 및 실서비스 중)
-- **Tech**: Next.js, Supabase (Realtime), Framer Motion, Tailwind CSS
-- **Key Point**: 
-  - **Supabase Realtime**을 활용한 실시간 채팅 및 접속 유저 상태 동기화 구현
-  - **뽀모도로 타이머**와 상태 연동을 통한 몰입 환경 제공
-  - 깃허브 OAuth 연동 및 이미지 URL 공유 등 풍부한 커뮤니티 기능
-- **Link**: [https://dev-connect-gules.vercel.app/](https://dev-connect-gules.vercel.app/)
-
-### [🔮 AI 타로 마스터 (Tarot-Master)](https://tarot-mauve.vercel.app/)
-> **"기획부터 배포까지, 풀스택 개발로 완성한 AI 타로 서비스"**
-- **Status**: **`Production Ready`** (배포 완료 및 실서비스 중)
-- **Tech**: React, Node.js, OpenAI API, Vercel
-- **Key Point**: 인프라 구축 및 API 연동을 포함한 전체 라이프사이클을 경험한 프로젝트입니다.
-- **Link**: [https://tarot-mauve.vercel.app/](https://tarot-mauve.vercel.app/)
-
-### [🎰 WHO'S NEXT? (제비뽑기)](https://whos-next-alpha.vercel.app/)
-> **"물리 엔진과 감각적인 사운드로 구현한 프리미엄 제비뽑기 서비스"**
-- **Status**: **`Production Ready`** (배포 완료 및 실서비스 중)
-- **Tech**: Next.js 15, Matter.js, Web Audio API, Framer Motion, Zustand
-- **Key Point**: 
-  - **Matter.js(2D 물리 엔진)**를 활용하여 실제 공이 섞이는 듯한 역동적인 인터랙션 구현
-  - **Zustand & LocalStorage** 연동을 통한 당첨 히스토리 유지 및 하이드레이션 이슈 해결
-- **Link**: [https://whos-next-alpha.vercel.app/](https://whos-next-alpha.vercel.app/)
-
 ---
 
 ## 📁 More Projects Showcase
@@ -306,6 +280,9 @@
 | **🎙️ ITP Lipsync Merger** | `Python` `WolvenKit CLI` | **사이버펑크 3인칭 모드의 영어 전용 V 립싱크를 다른 음성 언어로 병합하는 도구** | [🔗](https://github.com/yunsuper/Cyberpunk2077-ITP-Lipsync-Merger) |
 | **🔄 Serverless Keepalive (Template)** | `GitHub Actions` `Python` | **노트북 꺼져있어도 매일 자동 실행 - Render/Supabase Free Tier 슬립 방지** | [🔗](https://github.com/yunsuper/serverless-keepalive) |
 | **🎮 CrimsonDesert ModMerger** | `Python` | **붉은사막 JSON 모드 오프셋 자동 보정 및 God Mask 호환 패치 툴** | [🔗](https://github.com/yunsuper/CrimsonDesert-ModMerger) | 
+| **💻 Dev-Connect** | `Next.js` `Supabase Realtime` `Tailwind CSS` | **실시간 채팅·접속 상태 동기화, 뽀모도로 타이머, GitHub OAuth를 갖춘 개발자용 공유 오피스** | [🔗](https://dev-connect-gules.vercel.app/) |
+| **🔮 AI Tarot Master** | `React` `NestJS` `Supabase` `Gemini API` | **Vercel·Render 풀스택 배포 및 Gemini GA 모델 마이그레이션(v2.1.0)까지 운영 중인 AI 타로 서비스** | [🔗](https://tarot-mauve.vercel.app/) |
+| **🎰 WHO'S NEXT?** | `Next.js 15` `Matter.js` `Zustand` | **2D 물리 엔진으로 공이 섞이는 인터랙션과 Web Audio 사운드를 구현한 제비뽑기 서비스** | [🔗](https://whos-next-alpha.vercel.app/) |
 | **🤖 Ollama Reviewer** | `Ollama` `JS` | **로컬 LLM 기반 보안 중심 코드 리뷰 도구** | [🔗](https://github.com/yunsuper/Ollama-Local-Code-Reviewer) |
 | **🌐 Metabus Room** | `Vanilla JS` `Socket.io` | **순수 JS 실시간 채팅 및 물리 로직 메타버스** | [🔗](https://github.com/yunsuper/Metabus-My-Room) |
 | **🎬 Dead Reset Mac Patch** | `Python` `UnityPy` | **바이너리 에셋 수정을 통한 맥 전용 한글화 툴셋** | [🔗](https://github.com/yunsuper/DeadReset-KR-Patch-Mac) |
