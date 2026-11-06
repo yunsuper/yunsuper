@@ -107,6 +107,7 @@
 <img src="https://img.shields.io/badge/Supabase%20Edge%20Functions-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white">
 <img src="https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white">
 <img src="https://img.shields.io/badge/Tkinter-GUI-3776AB?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/SSE-Server--Sent%20Events-FF6F00?style=for-the-badge">
 </p>
 
 ### 🎨 Frontend & Game Engine
@@ -177,6 +178,10 @@
 <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white">
 <img src="https://img.shields.io/badge/Obsidian-7C3AED?style=for-the-badge&logo=obsidian&logoColor=white">
 <img src="https://img.shields.io/badge/GitHub%20CLI-181717?style=for-the-badge&logo=github&logoColor=white">
+<br>
+<img src="https://img.shields.io/badge/ClamAV-Antivirus%20Engine-2B5797?style=for-the-badge">
+<img src="https://img.shields.io/badge/VirusTotal%20API-394EFF?style=for-the-badge&logo=virustotal&logoColor=white">
+<img src="https://img.shields.io/badge/Homebrew-FBB040?style=for-the-badge&logo=homebrew&logoColor=black">
 </p>
 
 ---
@@ -217,6 +222,18 @@
 
 ## 🚀 Deployed & Live Projects
 
+### [🛡️ LocalTotal - Local-first Malware Scanner (macOS)](https://github.com/yunsuper/LocalTotal)
+> **"파일은 내 Mac 밖으로 보내지 않고, ClamAV 로컬 검사 + VirusTotal 해시 조회로 판정하는 수동 악성코드 검사기"**
+- **Status**: **`Open Source`** (GitHub 공개 · macOS 1차 완료, Windows Defender 연동 예정)
+- **Tech**: NestJS 12, Next.js 16, Tailwind CSS v4, TypeScript, ClamAV (clamd INSTREAM), VirusTotal API v3, SSE, npm workspaces
+- **Key Point**:
+  - **Privacy by Design**: VirusTotal에는 SHA-256 해시만 전송하고 업로드 코드를 아예 두지 않음. API·웹·clamd 모두 `127.0.0.1` 바인딩
+  - **Engine Adapter Architecture**: 공통 `ScanEngine` 인터페이스로 ClamAV·VirusTotal을 추상화해, Windows Defender를 어댑터 추가만으로 확장 가능하게 설계
+  - **Rate-limit Aware Pipeline**: 무료 API 제한(분당 4회·하루 500회)에 맞춘 15.5초 스로틀 큐, 24시간 캐시, 동시 요청 병합(in-flight dedupe), 대상 수에 따른 자동 조회 범위 전환
+  - **Safe Quarantine Transaction**: 해시 재검증 → 복사 → 무결성 확인 → 실행 권한 제거(0400) → 원본 삭제, 실패 시 롤백. 복원 시 원래 권한까지 복구
+  - **Local API Hardening**: Host·Origin 검사와 커스텀 헤더로 CSRF·DNS 리바인딩 차단, 모드 오탐 대응을 위한 제외 목록(검사만/건너뛰기) 설계
+- **Link**: [GitHub Repository 바로가기](https://github.com/yunsuper/LocalTotal)
+
 ### [🎙️ Immersive Third Person V2 - Korean VO Lipsync (Cyberpunk 2077 Mod)](https://www.nexusmods.com/cyberpunk2077/mods/35165)
 > **"한국어 더빙으로 플레이할 때도 3인칭 V의 입이 움직이도록, 영어 전용 립싱크 데이터를 한국어 음성 환경에 이식"**
 - **Status**: **`Production Ready`** (Nexus 배포 완료)
@@ -235,16 +252,6 @@
   - **Native C++ Engine**: 파이썬의 메모리 제어 한계를 넘기 위해 C++로 직접 설계한 **16바이트 정렬 압축 코어(`.dylib`)**를 개발하여 맥 네이티브 엔진과의 통신 성공
   - **Massive Data Indexing**: 150만 개의 에셋 경로를 단 3초 만에 전수 조사하여 특정 바이너리 오프셋을 타격하는 정규식 기반의 초고속 패칭 파이프라인 구축
 - **Link**: [GitHub Repository 바로가기](https://github.com/yunsuper/CrimsonDesert-Binary-Porting-Research)
-
-### [🗡️ Crimson Desert Font Modder (Mac)](https://github.com/yunsuper/CrimsonDesert-FontModder-Mac)
-> **LZ4 정밀 캘리브레이션 기술로 '붉은 사막'의 모든 폰트 슬롯을 완벽하게 제어하는 macOS 전용 오리지널 Python 모드
-- **Status**: **`Production Ready`** (Nexus 배포 완료)
-- **Tech**:  Python 3, Tkinter, LZ4 (Compression Engine), Binary Patching
-- **Key Point**:
-  - VFS Resolution: 붉은 사막의 .pamt 및 .paz 파일 구조를 분석하여 가상 파일 시스템 경로를 완벽하게 복원 및 리소스 매핑
-  - Inherited LZ4 Calibration: 원본 슬롯 크기에 맞춰 LZ4 압축 패딩을 실시간으로 정밀 조정(Calibration)하여 게임 안정성을 완벽히 유지
-  - GUI-Based Interface: GUI 기반 인터페이스로 macOS 환경에서 누구나 쉽게 커스텀 폰트(.ttf, .otf)를 모든 슬롯에 적용 가능
-- **Link**: [Nexus 바로가기](https://www.nexusmods.com/crimsondesert/mods/115)
 
 ### [🎒 Crimson Desert Inventory Mod (Mac)](https://github.com/yunsuper/CrimsonDesert-Inventory-Expander-Mac)
 > **"게임 내 가방 칸수를 확장하여 수집의 물리적 제약을 해소하는 시스템 패칭 툴"**
@@ -283,6 +290,7 @@
 | **🎙️ ITP Lipsync Merger** | `Python` `WolvenKit CLI` | **사이버펑크 3인칭 모드의 영어 전용 V 립싱크를 다른 음성 언어로 병합하는 도구** | [🔗](https://github.com/yunsuper/Cyberpunk2077-ITP-Lipsync-Merger) |
 | **🔄 Serverless Keepalive (Template)** | `GitHub Actions` `Python` | **노트북 꺼져있어도 매일 자동 실행 - Render/Supabase Free Tier 슬립 방지** | [🔗](https://github.com/yunsuper/serverless-keepalive) |
 | **🎮 CrimsonDesert ModMerger** | `Python` | **붉은사막 JSON 모드 오프셋 자동 보정 및 God Mask 호환 패치 툴** | [🔗](https://github.com/yunsuper/CrimsonDesert-ModMerger) | 
+| **🗡️ Crimson Desert Font Modder (Mac)** | `Python` `Tkinter` `LZ4` | **LZ4 정밀 캘리브레이션으로 모든 폰트 슬롯에 커스텀 폰트를 적용하는 macOS 전용 GUI 툴 (Nexus 배포)** | [🔗](https://github.com/yunsuper/CrimsonDesert-FontModder-Mac) |
 | **💻 Dev-Connect** | `Next.js` `Supabase Realtime` `Tailwind CSS` | **실시간 채팅·접속 상태 동기화, 뽀모도로 타이머, GitHub OAuth를 갖춘 개발자용 공유 오피스** | [🔗](https://dev-connect-gules.vercel.app/) |
 | **🔮 AI Tarot Master** | `React` `NestJS` `Supabase` `Gemini API` | **Vercel·Render 풀스택 배포 및 Gemini GA 모델 마이그레이션(v2.1.0)까지 운영 중인 AI 타로 서비스** | [🔗](https://tarot-mauve.vercel.app/) |
 | **🎰 WHO'S NEXT?** | `Next.js 15` `Matter.js` `Zustand` | **2D 물리 엔진으로 공이 섞이는 인터랙션과 Web Audio 사운드를 구현한 제비뽑기 서비스** | [🔗](https://whos-next-alpha.vercel.app/) |
