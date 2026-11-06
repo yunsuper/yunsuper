@@ -227,11 +227,9 @@
 - **Status**: **`Open Source`** (GitHub 공개 · macOS 1차 완료, Windows Defender 연동 예정)
 - **Tech**: NestJS 12, Next.js 16, Tailwind CSS v4, TypeScript, ClamAV (clamd INSTREAM), VirusTotal API v3, SSE, npm workspaces
 - **Key Point**:
-  - **Privacy by Design**: VirusTotal에는 SHA-256 해시만 전송하고 업로드 코드를 아예 두지 않음. API·웹·clamd 모두 `127.0.0.1` 바인딩
-  - **Engine Adapter Architecture**: 공통 `ScanEngine` 인터페이스로 ClamAV·VirusTotal을 추상화해, Windows Defender를 어댑터 추가만으로 확장 가능하게 설계
-  - **Rate-limit Aware Pipeline**: 무료 API 제한(분당 4회·하루 500회)에 맞춘 15.5초 스로틀 큐, 24시간 캐시, 동시 요청 병합(in-flight dedupe), 대상 수에 따른 자동 조회 범위 전환
-  - **Safe Quarantine Transaction**: 해시 재검증 → 복사 → 무결성 확인 → 실행 권한 제거(0400) → 원본 삭제, 실패 시 롤백. 복원 시 원래 권한까지 복구
-  - **Local API Hardening**: Host·Origin 검사와 커스텀 헤더로 CSRF·DNS 리바인딩 차단, 모드 오탐 대응을 위한 제외 목록(검사만/건너뛰기) 설계
+  - **Privacy by Design**: VirusTotal에는 SHA-256 해시만 전송(업로드 코드 없음), 모든 서버를 `127.0.0.1`에만 바인딩
+  - **Rate-limit Aware Pipeline**: 무료 API 제한에 맞춘 스로틀 큐·24시간 캐시·중복 요청 병합으로 하루 500회 안에서 동작
+  - **Safe Quarantine**: 해시 재검증 → 복사 → 실행 권한 제거 → 원본 삭제, 실패 시 롤백. 모드 오탐 대응 제외 목록 지원
 - **Link**: [GitHub Repository 바로가기](https://github.com/yunsuper/LocalTotal)
 
 ### [🎙️ Immersive Third Person V2 - Korean VO Lipsync (Cyberpunk 2077 Mod)](https://www.nexusmods.com/cyberpunk2077/mods/35165)
