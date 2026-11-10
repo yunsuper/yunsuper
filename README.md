@@ -181,6 +181,7 @@
 <br>
 <img src="https://img.shields.io/badge/ClamAV-Antivirus%20Engine-2B5797?style=for-the-badge">
 <img src="https://img.shields.io/badge/VirusTotal%20API-394EFF?style=for-the-badge&logo=virustotal&logoColor=white">
+<img src="https://img.shields.io/badge/Microsoft%20Defender-MpCmdRun-0078D4?style=for-the-badge">
 <img src="https://img.shields.io/badge/Homebrew-FBB040?style=for-the-badge&logo=homebrew&logoColor=black">
 </p>
 
@@ -222,13 +223,13 @@
 
 ## 🚀 Deployed & Live Projects
 
-### [🛡️ LocalTotal - Local-first Malware Scanner (macOS)](https://github.com/yunsuper/LocalTotal)
-> **"파일은 내 Mac 밖으로 보내지 않고, ClamAV 로컬 검사 + VirusTotal 해시 조회로 판정하는 수동 악성코드 검사기"**
-- **Status**: **`Open Source`** (GitHub 공개 · macOS 1차 완료, Windows Defender 연동 예정)
-- **Tech**: NestJS 12, Next.js 16, Tailwind CSS v4, TypeScript, ClamAV (clamd INSTREAM), VirusTotal API v3, SSE, npm workspaces
+### [🛡️ LocalTotal - Local-first Malware Scanner (macOS · Windows)](https://github.com/yunsuper/LocalTotal)
+> **"파일은 내 컴퓨터 밖으로 보내지 않고, ClamAV·Defender 로컬 검사 + VirusTotal 해시 조회로 판정하는 수동 악성코드 검사기"**
+- **Status**: **`Open Source`** (GitHub 공개 · macOS / Windows 10·11 지원)
+- **Tech**: NestJS 12, Next.js 16, Tailwind CSS v4, TypeScript, ClamAV (clamd INSTREAM), Microsoft Defender (MpCmdRun), VirusTotal API v3, SSE, npm workspaces
 - **Key Point**:
-  - **Privacy by Design**: VirusTotal에는 SHA-256 해시만 전송(업로드 코드 없음), 모든 서버를 `127.0.0.1`에만 바인딩
-  - **Rate-limit Aware Pipeline**: 무료 API 제한에 맞춘 스로틀 큐·24시간 캐시·중복 요청 병합으로 하루 500회 안에서 동작
+  - **Privacy by Design**: VirusTotal에는 SHA-256 해시만 전송(업로드 코드 없음), 모든 서버를 `127.0.0.1`에만 바인딩. Defender 샘플 자동 제출이 켜져 있으면 엔진을 자동으로 끔
+  - **Cross-platform Engine Adapter**: 공통 엔진 인터페이스에 Windows Defender 어댑터만 추가해 macOS 동작은 그대로 유지. 이전 구현과 결과를 직접 비교하는 회귀 테스트(API 223 · 웹 26)로 보장
   - **Safe Quarantine**: 해시 재검증 → 복사 → 실행 권한 제거 → 원본 삭제, 실패 시 롤백. 모드 오탐 대응 제외 목록 지원
 - **Link**: [GitHub Repository 바로가기](https://github.com/yunsuper/LocalTotal)
 
