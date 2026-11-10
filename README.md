@@ -39,6 +39,7 @@
 <img src="https://img.shields.io/badge/VFS-Analyzer-FFD700?style=for-the-badge&logo=blueprint&logoColor=black">
 <br>
 <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white">
+<img src="https://img.shields.io/badge/Windows-0078D4?style=for-the-badge">
 <img src="https://img.shields.io/badge/Reverse%20Engineering-FF5722?style=for-the-badge&logo=probot&logoColor=white">
 <img src="https://img.shields.io/badge/RegEx-424242?style=for-the-badge&logo=regex&logoColor=white">
 <img src="https://img.shields.io/badge/Automation-007ACC?style=for-the-badge&logo=blueprint&logoColor=white">
@@ -183,6 +184,7 @@
 <img src="https://img.shields.io/badge/VirusTotal%20API-394EFF?style=for-the-badge&logo=virustotal&logoColor=white">
 <img src="https://img.shields.io/badge/Microsoft%20Defender-MpCmdRun-0078D4?style=for-the-badge">
 <img src="https://img.shields.io/badge/Homebrew-FBB040?style=for-the-badge&logo=homebrew&logoColor=black">
+<img src="https://img.shields.io/badge/winget-Package%20Manager-0078D4?style=for-the-badge">
 </p>
 
 ---
@@ -224,7 +226,7 @@
 ## 🚀 Deployed & Live Projects
 
 ### [🛡️ LocalTotal - Local-first Malware Scanner (macOS · Windows)](https://github.com/yunsuper/LocalTotal)
-> **"파일은 내 컴퓨터 밖으로 보내지 않고, ClamAV·Defender 로컬 검사 + VirusTotal 해시 조회로 판정하는 수동 악성코드 검사기"**
+> **"파일을 내 컴퓨터 밖으로 보내지 않고, ClamAV·Defender 로컬 검사 + VirusTotal 해시 조회로 판정하는 수동 악성코드 검사기"**
 - **Status**: **`Open Source`** (GitHub 공개 · macOS / Windows 10·11 지원)
 - **Tech**: NestJS 12, Next.js 16, Tailwind CSS v4, TypeScript, ClamAV (clamd INSTREAM), Microsoft Defender (MpCmdRun), VirusTotal API v3, SSE, npm workspaces
 - **Key Point**:
